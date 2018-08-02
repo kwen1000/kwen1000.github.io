@@ -4,56 +4,132 @@
   <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8"/>
   <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href = "https://fonts.googleapis.com/css?family=Roboto" rel = "stylesheet"/>
+  <link href = "https://fonts.googleapis.com/css?family=Questrial" rel = "stylesheet"/>
   
   <meta name = "theme-color" content = "#486FBC" />
 
   <title>Kejie Wen</title>
   
   <style>
-    @keyframes slide {0% {background-position: 50% 100vh} 80% {background-position: 50% 100vh} 100% {background-position: 50% 0vh}}
-    @-webkit-keyframes slide {0% {background-position: 50% 100vh} 80% {background-position: 50% 100vh} 100% {background-position: 50% 0vh}}
+    @keyframes slide1 {
+      0% {transform: translateY(-100%)}
+      50% {transform: translateY(-100%)}
+      100% {transform: translateY(0)}
+    }
+    
+    @keyframes slide2 {
+      0% {transform: translateY(100%)}
+      50% {transform: translateY(100%)}
+      100% {transform: translateY(0)}
+    }
+    
+    html, body, .panel {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
     
     body {
-      background-color: #000000;
+      background-image: url(/downtown-losangeles-compress.jpg);
+      background-size: cover;
+      background-position: center;
+      background-color: #FFFFFF;
       margin: 0;
     }
   
     .panel {
-      background-image: url(/downtown-losangeles-compress.jpg);
+      animation: slide1 3s;
+      position: relative;
+    }
+    
+    .container {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .panel::before {
+      content: " ";
+      animation: slide2 3s;
+      background-image: url(/downtown-losangeles-compress-blur.jpg);
       background-size: cover;
       background-position: center;
+      display: block;
       position: absolute;
-      bottom: 0;
-      top: 0;
-      right: 0;
-      left: 0;
-      padding: 8%;
+      /* filter: blur(5px) */
+      z-index: -1;
+      width: 100%;
+      height: 100%;
     }
     
     .content {
       color: #FFFFFF;
-      font-family: "Roboto", sans-serif;
-      padding: 8%;
+      font-family: "Questrial", sans-serif;
+      padding: 8% 0 8%;
     }
     
-    .big{font-size: 48px; font-weight: bold; margin: 32px 0 0 0}
-    .light{font-size: 12px; font-weight: 100}
-    .small{font-size: 12px}
+    .big {
+      font-size: 3em;
+      font-weight: bold;
+    }
     
-    .text{display: block; max-width: 320px}
+    .tagline {
+      color: #C8F1EB;
+    }
     
-    .portrait{border-radius: 50%; float: left; margin: 16px}
+    .light {
+      font-size: 12px;
+      font-weight: 100;
+    }
     
-    a{text-decoration: none; color: #FFFFFF}
+    .small {
+      font-size: 12px
+    }
+    
+    .portrait {
+      border-radius: 50%;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #FFFFFF
+    }
+    
+    .horizontal-rule {
+      border-top: 1px rgba(255, 255, 255, 0.2) solid;
+      display: block;
+      width: 100%;
+    }
+    
+    .title {
+      font-size: 1.5em;
+    }
+    
+    .quick-fact {
+      display: inline-block;
+      width: 124px;
+    }
+    
+    .fact {
+      font-size: 1em;
+      display: block;
+    }
+    
+    .description {
+      font-size: 0.5em;
+      color: #C8F1EB;
+    }
     
     .card {
-      background-image: url(/downtown-losangeles-compress-blur.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 24px;
-      height: 100%;
-      background-size: auto 116%;
+      animation: slide2 3s;
+      /*
+      background-color: rgba(255, 255, 255, 0.1);
+      */
+      display: inline-block;
+      margin: 8%;
+      
+      max-width: 320px
     }
     
   </style>
@@ -61,24 +137,51 @@
 <body>
   <div class = "panel">
     
-    <div class = "card">
-      <div class = "content">
-        <span class = "text small">SOFTWARE / DEVELOPMENT</span>
-        <span class = "text big">Kejie Wen</span>
-        <span><img class = "portrait" src = "/portrait.jpg" width = "48px" /></span>
-        <span class = "text light"><b>Bringing diversity to a technologically advanced world.</b> A hardworking candidate with a unique backstory ready for any team. Loves photography, reading, and exploring the great outdoors. Lives in Los Angeles, igniting smiles in everyone.</span>
+    <div class = "container">
+
+      <div class = "card">
+        <div class = "content">
+          <img class = "portrait" src = "/portrait.jpg" width = "48px" />
+        </div>
       </div>
-    </div>
-
-    <div class = "card">
-              <span class = "text light">Lorem ipsum</span>
-    </div>
-
-    <div class = "card">
-              <span class = "text small bottom">
-          <a href = "https://angel.co/kejie-wen">AngelList</a><br>
-          <a href = "https://github.com/kwen1000">GitHub</a>
-        </span>
+    
+      <div class = "card">
+        <div class = "content">
+          <span class = "big">Kejie Wen</span>
+          <br><br>
+          <span class = "tagline">Brightening a big world, technologically.</span>
+          <br><br>
+          <span class = "horizontal-rule"></span>
+          <br><br>
+          <span class = "title">Where I Studied</span>
+          <br><br>
+          <span class = "quick-fact">
+            <span class = "fact">UCLA</span>
+            <span class = "description">Class of 2020</span>
+          </span>
+          <span class = "quick-fact">
+            <span class = "fact">Computer Science + Linguistics</span>
+            <span class = "description">Bachelor's</span>
+          </span>
+        </div>
+      </div>
+  
+      <div class = "card">
+        <div class = "content">
+          <span class = "text light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          <br><br><br><br><br><br>
+        </div>
+      </div>
+      
+      <div class = "card">
+        <div class = "content">
+          <span class = "text small bottom">
+            <a href = "https://angel.co/kejie-wen">AngelList</a><br>
+            <a href = "https://github.com/kwen1000">GitHub</a>
+          </span>
+        </div>
+      </div>
+    
     </div>
     
   </div>
