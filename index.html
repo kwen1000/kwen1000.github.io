@@ -170,7 +170,222 @@
           <br><br>
           <span class = "title">What I Did</span>
           <br><br>
-          <span class = "text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          <span class = "text"><!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8"/>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href = "https://fonts.googleapis.com/css?family=Questrial" rel = "stylesheet"/>
+  <link href = "/programmingfonts.css" rel = "stylesheet"/>
+  
+  <meta name = "theme-color" content = "#486FBC" />
+
+  <title>Kejie Wen</title>
+  
+  <style>
+    @keyframes slide1 {
+      0% {transform: translateY(-100%)}
+      50% {transform: translateY(-100%)}
+      100% {transform: translateY(0)}
+    }
+    
+    @keyframes slide2 {
+      0% {transform: translateY(100%)}
+      50% {transform: translateY(100%)}
+      100% {transform: translateY(0)}
+    }
+    
+    html, body, .panel {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    body {
+      background-image: url(/downtown-losangeles-compress.jpg);
+      background-size: cover;
+      background-position: center;
+      background-color: #FFFFFF;
+      margin: 0;
+    }
+  
+    .panel {
+      animation: slide1 3s;
+      position: relative;
+    }
+    
+    .container {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .panel::before {
+      content: " ";
+      animation: slide2 3s;
+      background-image: url(/downtown-losangeles-compress-blur.jpg);
+      background-size: cover;
+      background-position: center;
+      display: block;
+      position: absolute;
+      /* filter: blur(5px) */
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .content {
+      color: #FFFFFF;
+      font-family: "Questrial", sans-serif;
+      padding: 8% 0 8%;
+    }
+    
+    .big {
+      font-size: 3em;
+      font-weight: bold;
+    }
+    
+    .grand {
+      font-size: 2em;
+    }
+    
+    .tagline {
+      color: #C8F1EB;
+    }
+    
+    .portrait {
+      border-radius: 50%;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #FFFFFF
+    }
+    
+    .horizontal-rule {
+      border-top: 1px rgba(255, 255, 255, 0.2) solid;
+      display: block;
+      width: 100%;
+    }
+    
+    .title {
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+    
+    .quick-fact {
+      display: inline-block;
+      width: 124px;
+    }
+    
+    .fact {
+      font-size: 1em;
+      display: block;
+    }
+    
+    .description {
+      font-size: 0.5em;
+      color: #C8F1EB;
+    }
+    
+    .card {
+      animation: slide2 3s;
+      /*
+      background-color: rgba(255, 255, 255, 0.1);
+      */
+      display: inline-block;
+      margin: 4%;
+      vertical-align: top;
+      max-width: 320px
+    }
+    
+  </style>
+</head>
+<body>
+  <div class = "panel">
+    
+    <div class = "container">
+
+      <div class = "card">
+        <div class = "content">
+          <br>
+          <img class = "portrait" src = "/portrait.jpg" width = "48px" />
+        </div>
+      </div>
+    
+      <div class = "card">
+        <div class = "content">
+          <span class = "big">Kejie Wen</span>
+          <br><br>
+          <span class = "tagline">Brightening a big world, technologically.</span>
+          <br><br>
+          <span class = "horizontal-rule"></span>
+          <br><br>
+          <span class = "title">Where I Studied</span>
+          <br><br>
+          <span class = "quick-fact">
+            <span class = "fact">UCLA</span>
+            <span class = "description">2020 (Go Bruins!)</span>
+          </span>
+          <span class = "quick-fact">
+            <span class = "fact">Computer Science + Linguistics</span>
+            <span class = "description">Bachelor's</span>
+          </span>
+        </div>
+      </div>
+  
+      <div class = "card">
+        <div class = "content">
+          <span class = "horizontal-rule"></span>
+          <br><br>
+          <span class = "title">What I Did</span>
+          <br><br>
+          <span class = "text">I have worked with SuperWorld on a real estate market driven by the Ethereum blockchain.</span>
+        </div>
+      </div>
+      
+      <div class = "card">
+        <div class = "content">
+          <span class = "horizontal-rule"></span>
+          <br><br>
+          <span class = "title">What I Know</span>
+          <br><br>
+          <span class = "text">
+            <i class = "bitIcon-cs big"></i>
+            <i class = "bitIcon-cpp big"></i>
+            <i class = "bitIcon-css big"></i>
+            <i class = "bitIcon-html5 big"></i><br>
+            <i class = "bitIcon-java big"></i>
+            <i class = "bitIcon-js big"></i>
+            <i class = "bitIcon-php big"></i>
+          </span>
+          <br><br><br>
+          <span class = "text">Some other things I'm familiar with include Android Studio, ASP.NET, Blender, jQuery, Unity, and Visual Studio.</span>
+        </div>
+      </div>
+      
+      <div class = "card">
+        <div class = "content">
+          <span class = "horizontal-rule"></span>
+          <br><br>
+          <span class = "title">How To Reach Me</span>
+          <br><br>
+          <span class = "text small bottom">
+            <a href = "https://angel.co/kejie-wen">AngelList</a><br>
+            <a href = "https://github.com/kwen1000">GitHub</a><br>
+            <a href = "https://linkedin.com/in/kejie-wen">LinkedIn</a>
+          </span>
+        </div>
+      </div>
+    
+    </div>
+    
+  </div>
+</body>
+</html>
+</span>
         </div>
       </div>
       
