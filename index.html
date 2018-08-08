@@ -18,7 +18,19 @@
       100% {transform: translateY(0)}
     }
     
+    @-webkit-keyframes slide1 {
+      0% {transform: translateY(-100%)}
+      50% {transform: translateY(-100%)}
+      100% {transform: translateY(0)}
+    }
+    
     @keyframes slide2 {
+      0% {transform: translateY(100%)}
+      50% {transform: translateY(100%)}
+      100% {transform: translateY(0)}
+    }
+    
+    @-webkit-keyframes slide2 {
       0% {transform: translateY(100%)}
       50% {transform: translateY(100%)}
       100% {transform: translateY(0)}
@@ -40,6 +52,7 @@
   
     .panel {
       animation: slide1 3s;
+      -webkit-animation: slide1 3s;
       position: relative;
     }
     
@@ -120,6 +133,7 @@
     
     .card {
       animation: slide2 3s;
+      -webkit-animation: slide2 3s;
       /*
       background-color: rgba(255, 255, 255, 0.1);
       */
@@ -190,7 +204,7 @@
             <i class = "bitIcon-php big"></i>
           </span>
           <br><br><br>
-          <span class = "text"></span>
+          <span class = "text">Some other things I'm familiar with include Android Studio, ASP.NET, Blender, jQuery, Unity, and Visual Studio.</span>
         </div>
       </div>
       
