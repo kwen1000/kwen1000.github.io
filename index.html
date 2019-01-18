@@ -58,7 +58,7 @@
       background-image: url(/downtown-losangeles-compress.jpg);
       background-size: cover;
       background-position: center;
-      background-color: #FFFFFF;
+      background-color: #000000;
       margin: 0;
     }
   
@@ -97,15 +97,17 @@
     
     .content {
       background-color: rgba(255, 255, 255, 0.3);
-      font-family: sans-serif;
-      line-height: 1.4;
+      color: #FFFFFF;
+      font-family: "Questrial", sans-serif;
       padding: 8%;
     }
     
     .big {
       font-size: 3em;
       /* font-weight: bold; */
-      color: #FFFFFF;
+    }
+    
+    .name {
     }
     
     .grand {
@@ -113,7 +115,6 @@
     }
     
     .tagline {
-      color: #FFFFFF;
     }
     
     .portrait {
@@ -123,6 +124,14 @@
     a {
       text-decoration: none;
       color: #FFFFFF;
+      background-color: rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      padding: 12px;
+      margin-top: 12px;
+    }
+
+    a::after {
+        content: "  →  "
     }
     
     .horizontal-rule {
@@ -132,42 +141,32 @@
     }
     
     .title {
-      color: #FFFFFF;
-      font-family: "Questrial", sans-serif;
-      /* font-weight: bold; */
-      font-size: 3em /*1.25em*/;
+      font-size: 42px;
+      line-height: 1;
     }
     
     .text {
-      color: #FFFFFF;
+      line-height: 1.4;
     }
     
     .quick-fact {
-      color: #FFFFFF;
       display: inline-block;
       width: 124px;
     }
     
     .fact {
-      color: #FFFFFF;
-      font-size: 1em;
+      font-size: 14px;
       display: block;
     }
     
     .description {
-      color: #FFFFFF;
-      /* font-size: 0.5em; */
+      font-size: 14px;
     }
     
     .card {
       animation: slide2 3s;
       -webkit-animation: slide2 3s;
-      /*
-      background-color: rgba(255, 255, 255, 0.1);
-      display: inline-block;
-      */
-      margin-left: 7%;
-      martin-top: 8%;
+      margin-left: 4%;
       vertical-align: top;
       max-width: 320px
     }
@@ -193,13 +192,18 @@
           <br><br>
           <br><br>
           <br><br>
-          <span class = "big">Kevin Wen</span>
+          <span class = "title">Kevin Wen</span>
           <br><br>
-          <span class = "tagline">Rise and shine.</span>
+          <span class = "text">Rise and shine.</span>
+        </div>
+      </div>
+      
+      <div class = "card">
+        <div class = "content">
           <br><br>
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">Where I Study</span>
+          <span class = "title">Where I study</span>
           <br><br>
           <span class = "quick-fact">
             <span class = "fact">UCLA</span>
@@ -207,7 +211,7 @@
           </span>
           <span class = "quick-fact">
             <span class = "fact">Computer Science + Linguistics</span>
-            <span class = "description">Bachelor</span>
+            <span class = "description">Bachelor's</span>
           </span>
         </div>
       </div>
@@ -216,7 +220,7 @@
         <div class = "content">
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">What I Do</span>
+          <span class = "title">What I do</span>
           <br><br>
           <span class = "text">Looking forwards to big opportunities coming my way.<br><br>Previously, I have worked with SuperWorld on Unity-based 3D augmented reality content creation, and on a real estate market driven by the Ethereum blockchain.</span>
         </div>
@@ -226,7 +230,7 @@
         <div class = "content">
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">What I Know</span>
+          <span class = "title">What I know</span>
           <br><br>
           <span class = "text">
             <i class = "bitIcon-cs big"></i>
@@ -246,7 +250,7 @@
         <div class = "content">
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">How To Reach Me</span>
+          <span class = "title">Let's get in touch</span>
           <br><br>
           <span class = "text small bottom">
             <a href = "https://angel.co/kejie-wen">AngelList</a><br>
@@ -260,7 +264,7 @@
         <div class = "content">
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">Some Treats</span>
+          <span class = "title">Other stuff</span>
           <br><br>
           <span class = "text small bottom">
             <a href = "javascript:void(0)" onclick = "document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' blue-theme')">Click for blue theme!</a><br>
