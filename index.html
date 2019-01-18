@@ -281,7 +281,8 @@
           <span class = "title">Some fun stuff</span>
           <br><br>
           <span class = "text small bottom">
-            <a href = "javascript:void(0)" class = "boxed" onclick = "document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' blue-theme')">Click for blue theme!</a><br>
+            <a href = "javascript:void(0)" class = "boxed" toggle = "0" onclick = "document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' blue-theme')">Change theme</a><br>
+            <a href = "javascript:void(0)" class = "boxed" onclick = 'var anim = document.querySelector(".panel").style.animation; document.querySelector(".panel").style.animation = "none"; window.requestAnimationFrame(function(){document.querySelector(".panel").style.animation = anim})'>Reset animation</a><br>
           </span>
         </div>
       </div>
