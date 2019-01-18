@@ -96,7 +96,7 @@
     }
     
     .theme2::before {
-      background-image: url(/background1.png);
+      background-image: url(/background1.jpg);
     }
     
     .content {
@@ -285,7 +285,7 @@
           <span class = "title">Some fun stuff</span>
           <br><br>
           <span class = "text small bottom">
-            <a href = "javascript:void(0)" class = "boxed" toggle = "0" onclick = "if (this.toggle == '0') {this.toggle = "1"}; else if (this.toggle == '1') {this.toggle = '2'}; document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' theme'+this.toggle+'')">Change theme</a><br>
+            <a href = "javascript:void(0)" class = "boxed" toggle = "0" onclick = "if (this.getAttribute('toggle') == '0'){this.setAttribute('toggle', '1')} else if (this.getAttribute('toggle') == '1'){this.setAttribute('toggle', '2')}; document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' theme'+this.getAttribute('toggle')+'')">Change theme</a><br>
             <a href = "javascript:void(0)" class = "boxed" onclick = 'window.location.reload()'>Reset animation</a><br>
           </span>
         </div>
