@@ -142,6 +142,11 @@
       padding: 12px;
     }
     
+    .boxedNoBack {
+      display: inline-block;
+      padding: 12px;
+    }
+    
     .title {
       font-size: 42px;
       line-height: 1;
@@ -208,11 +213,11 @@
           <span class = "title">Where I study</span>
           <br><br>
           <span class = "quick-fact">
-            <span class = "fact">UCLA 2020</span>
+            <span class = "fact boxedNoBack">UCLA 2020</span>
             <span class = "description boxed">UCLA 2020 Go Bruins!</span>
           </span>
           <span class = "quick-fact">
-            <span class = "fact">Bachelor's</span>
+            <span class = "fact boxedNoBack">Bachelor's</span>
             <span class = "description boxed">Computer Science + Linguistics</span>
           </span>
         </div>
@@ -236,11 +241,11 @@
           <br><br>
           <span class = "text">
             <i class = "bitIcon-cs big boxed"></i>
-            <i class = "bitIcon-cpp big boxed"></i><br>
+            <i class = "bitIcon-cpp big boxed"></i><br><br>
             <i class = "bitIcon-css big boxed"></i>
-            <i class = "bitIcon-html5 big boxed"></i><br>
+            <i class = "bitIcon-html5 big boxed"></i><br><br>
             <i class = "bitIcon-java big boxed"></i>
-            <i class = "bitIcon-js big boxed"></i><br>
+            <i class = "bitIcon-js big boxed"></i><br><br>
             <i class = "bitIcon-php big boxed"></i>
           </span>
           <br><br><br>
@@ -269,7 +274,7 @@
           <span class = "title">Other stuff</span>
           <br><br>
           <span class = "text small bottom">
-            <a href = "javascript:void(0)" onclick = "document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' blue-theme')">Click for blue theme!</a><br>
+            <a href = "javascript:void(0)" class = "boxed" onclick = "document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' blue-theme')">Click for blue theme!</a><br>
           </span>
         </div>
       </div>
