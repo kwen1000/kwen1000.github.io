@@ -19,7 +19,19 @@ body {
     color: #333333;
     margin: 0
 }
+@-webkit-keyframes slide2 {
+    0% {transform: translateY(100%)}
+    50% {transform: translateY(100%)}
+    100% {transform: translateY(0)}
+}
+@-webkit-keyframes slide2 {
+    0% {-webkit-transform: translateY(100%)}
+    50% {-webkit-transform: translateY(100%)}
+    100% {-webkit-transform: translateY(0)}
+}
 .card {
+    animation: slide2 3s;
+    -webkit-animation: slide2 3s;
     margin: 0 0 32px 0
 }
 .content {
@@ -55,6 +67,9 @@ body {
 .title {
     font-size: 32px;
 }
+}
+.title span {
+  text-shadow: -1px 1px, 1px 1px, 1px 1px
 }
 .text, .description {
     font-family: "DM Serif Display", serif;
@@ -115,8 +130,6 @@ a:hover {
           <span class = "text boxed">
             <br><br>
             It's always sunny.
-            <br><br>
-            I am a Computer Science and Linguistics student at the University of California, Los Angeles (UCLA) expecting to graduate Spring of 2021.
             <br><br>
             I have interned with NeighborNosh to help develop their ReactJS frontend and Python backend. I have also worked with SuperWorld to help enrich augmented reality content and improve their frontend.
             <br><br>
