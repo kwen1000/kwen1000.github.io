@@ -13,7 +13,64 @@
 
   <title>Kevin Wen</title>
  
-</head>
+  <style>
+body {
+    background-color: white; 
+    color: #333333;
+    margin: 0
+}
+.panel {
+}
+.content {
+    display: block;
+    padding: 0 10vw;
+}
+.content::after {
+    content: "";
+    background-image: url(/downtown-losangeles-compress.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.015;
+    z-index: -1;
+}
+.big {font-size: 48px}
+.title {
+    font-family: "Questrial", sans-serif; 
+    font-weight: bold; 
+    font-size: 6vw; 
+}
+.text, .description {
+    font-family: "DM Serif Display", serif;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+a::after {
+    content: " → ";
+    /*
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #00ff84;
+    color: white;
+    text-align: center;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    */
+}
+a:hover {
+    text-decoration: underline
+}
+  </style>
+  
+  </head>
 <body>
   <div class = "panel">
     
@@ -33,7 +90,10 @@
           <br><br>
           <br><br>
           <br><br>
-          <span class = "title"><div><span style="color:#00ffc7;">K</span><span style="color:#00ffbc;">e</span><span style="color:#00ffb1;">v</span><span style="color:#00ffa5;">i</span><span style="color:#00ff9a;">n</span><span style="color:#00ff8f;"> </span><span style="color:#00ff84;">W</span><span style="color:#00ff78;">e</span><span style="color:#00ff6d;">n</span></div></span>
+          <span class = "title">
+            <span style="color:#70c794;">K</span><span style="color:#6bc899;">e</span><span style="color:#66c89f;">v</span><span style="color:#61c9a4;">i</span><span style="color:#5dc9aa;">n</span><span style="color:#58caaf;"> </span><span style="color:#53cab4;">W</span><span style="color:#4ecbba;">e</span><span style="color:#49cbbf;">n</span>
+          </span>
+          <br><br>
           <span class = "text boxed">It's always sunny.</span>
         </div>
       </div>
@@ -43,19 +103,12 @@
           <br><br>
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">The bookworm</span>
-          <br><br>
-          <span class = "quick-fact">
-            <span class = "fact boxedNoBack">School</span><br>
-            <span class = "description boxed">UCLA</span><br>
-            <span class = "description boxed">2020</span><br>
-            <span class = "description boxed">Go Bruins!</span>
+          <span class = "title">
+            <span style="color:#70c794;">T</span><span style="color:#6cc798;">h</span><span style="color:#69c89c;">e</span><span style="color:#65c8a0;"> </span><span style="color:#62c8a4;">b</span><span style="color:#5ec9a8;">o</span><span style="color:#5bc9ab;">o</span><span style="color:#57caaf;">k</span><span style="color:#54cab3;">w</span><span style="color:#50cab7;">o</span><span style="color:#4dcbbb;">r</span><span style="color:#49cbbf;">m</span>
           </span>
-          <span class = "quick-fact">
-            <span class = "fact boxedNoBack">Degree</span><br>
-            <span class = "description boxed">Bachelor's</span><br>
-            <span class = "description boxed">Computer Science</span><br>
-            <span class = "description boxed">Linguistics</span><br>
+          <br><br>
+          <span class = "text">
+            I am a Computer Science and Linguistics student at the University of California, Los Angeles (UCLA) expecting to graduate Spring of 2021.
           </span>
         </div>
       </div>
@@ -64,14 +117,16 @@
         <div class = "content">
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">A blast from my past</span>
+          <span class = "title">
+            <span style="color:#70c794;">A</span><span style="color:#6ec796;"> </span><span style="color:#6cc799;">b</span><span style="color:#6ac89b;">l</span><span style="color:#68c89d;">a</span><span style="color:#66c89f;">s</span><span style="color:#64c8a2;">t</span><span style="color:#62c8a4;"> </span><span style="color:#60c9a6;">f</span>
+          </span>
           <br><br>
           <span class = "text">
-            Looking forward to opportunities coming my way.
+            I have interned with NeighborNosh to help develop their ReactJS frontend and their Python backend.
             <br><br>
-            I have worked with SuperWorld to help enrich their augment reality content. I have also worked as a front-end developer where I maintained Mapbox code and designed the page for their blockchain market project.
+            Previously, I have worked with SuperWorld to help enrich their augmented reality content. I have also worked as a front-end developer where I maintained Mapbox code and designed the page for their blockchain market project.
             <br><br>
-            Of course, I am the sole creator of this nice webpage.
+            Of course, I am the creator of this webpage.
           </span>
         </div>
       </div>
@@ -80,7 +135,9 @@
         <div class = "content">
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">What I speak</span>
+          <span class = "title">
+            <span style="color:#70c794;">W</span><span style="color:#6cc798;">h</span><span style="color:#69c89c;">a</span><span style="color:#65c8a0;">t</span><span style="color:#62c8a4;"> </span><span style="color:#5ec9a8;">I</span><span style="color:#5bc9ab;"> </span><span style="color:#57caaf;">s</span><span style="color:#54cab3;">p</span><span style="color:#50cab7;">e</span><span style="color:#4dcbbb;">a</span><span style="color:#49cbbf;">k</span>
+          </span>
           <br><br>
           <span class = "text">
             <i class = "bitIcon-cs big boxed"></i>
@@ -100,25 +157,14 @@
         <div class = "content">
           <span class = "horizontal-rule"></span>
           <br><br>
-          <span class = "title">Let's get in touch</span>
+          <span class = "title">
+            <span style="color:#70c794;">L</span><span style="color:#6ec797;">e</span><span style="color:#6bc799;">t</span><span style="color:#69c89c;">'</span><span style="color:#67c89e;">s</span><span style="color:#65c8a1;"> </span><span style="color:#62c8a3;">g</span><span style="color:#60c9a6;">e</span><span style="color:#5ec9a8;">t</span><span style="color:#5bc9ab;"> </span><span style="color:#59c9ad;">i</span><span style="color:#57cab0;">n</span><span style="color:#54cab2;"> </span><span style="color:#52cab5;">t</span><span style="color:#50cab7;">o</span><span style="color:#4ecbba;">u</span><span style="color:#4bcbbc;">c</span><span style="color:#49cbbf;">h</span>
+          </span>
           <br><br>
           <span class = "text small bottom">
             <!--<a class = "boxed" href = "https://angel.co/kejie-wen">AngelList</a><br>-->
             <a class = "boxed" href = "https://github.com/kwen1000">GitHub</a><br>
             <a class = "boxed" href = "https://linkedin.com/in/kejie-wen">LinkedIn</a>
-          </span>
-        </div>
-      </div>
-    
-      <div class = "card">
-        <div class = "content">
-          <span class = "horizontal-rule"></span>
-          <br><br>
-          <span class = "title">Some fun stuff</span>
-          <br><br>
-          <span class = "text small bottom">
-            <a href = "javascript:void(0)" class = "boxed" toggle = "0" onclick = "if (this.getAttribute('toggle') == '0'){this.setAttribute('toggle', '1'); this.innerText = 'Change theme again!'} else if (this.getAttribute('toggle') == '1'){this.setAttribute('toggle', '2'); this.innerText = 'That is all!'}; document.querySelector('.panel').setAttribute('class', document.querySelector('.panel').getAttribute('class')+' theme'+this.getAttribute('toggle')+'')">Change theme</a><br>
-            <a href = "javascript:void(0)" class = "boxed" onclick = 'window.location.reload()'>Reset animation</a><br>
           </span>
         </div>
       </div>
