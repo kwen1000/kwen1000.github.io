@@ -19,6 +19,14 @@ body {
     color: #333333;
     margin: 0
 }
+@-webkit-keyframes slide1 {
+    0% {height: 110vh}
+    100% {height: 64px}
+}
+@-webkit-keyframes slide1 {
+    0% {height: 110vh}
+    100% {height: 64px}
+}
 @-webkit-keyframes slide2 {
     0% {transform: translateX(100%)}
     50% {transform: translateX(100%)}
@@ -30,14 +38,30 @@ body {
     100% {-webkit-transform: translateX(0)}
 }
 .card {
+  /*
     animation: slide2 3s;
     -webkit-animation: slide2 3s;
+  */
     margin: 0 0 32px 0
 }
 .content {
     display: block;
     padding: 0 10vw;
 }
+.container::before {
+    content: " ";
+    animation: slide1 3s ease-in;
+    -webkit-animation: slide1 3s ease-in;
+    background-color: #9063CB;
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 0.3) inset;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -32px;
+    height: 64px;
+    z-index: 1
+} 
     /*
 .content::after {
     content: "";
@@ -140,7 +164,7 @@ a:hover {
           <br><br>
           <br><br>
           <span class = "title first">
-            <div><span style="color:#9634a7;">K</span><span style="color:#9933ac;">e</span><span style="color:#9b31b1;">v</span><span style="color:#9e30b5;">i</span><span style="color:#a12fba;">n</span><span style="color:#a32dbf;"> </span><span style="color:#a62cc4;">W</span><span style="color:#a92ac9;">e</span><span style="color:#ac29ce;">n</span><span style="color:#ae28d2;">.</span><span style="color:#b126d7;"> </span><span style="color:#b425dc;">U</span><span style="color:#b624e1;">C</span><span style="color:#b922e6;">L</span><span style="color:#bc21ea;">A</span><span style="color:#be1fef;">.</span><span style="color:#c11ef4;"> </span></div><div><span style="color:#9e30b5;">C</span><span style="color:#a12fba;">o</span><span style="color:#a32dbf;">m</span><span style="color:#a62cc4;">p</span><span style="color:#a92ac9;">u</span><span style="color:#ac29ce;">t</span><span style="color:#ae28d2;">e</span><span style="color:#b126d7;">r</span><span style="color:#b425dc;"> </span><span style="color:#b624e1;">S</span><span style="color:#b922e6;">c</span><span style="color:#bc21ea;">i</span><span style="color:#be1fef;">e</span><span style="color:#c11ef4;">n</span><span style="color:#be1fef;">c</span><span style="color:#bc21ea;">e</span><span style="color:#b922e6;">.</span></div><div><span style="color:#a62cc4;">L</span><span style="color:#a92ac9;">i</span><span style="color:#ac29ce;">n</span><span style="color:#ae28d2;">g</span><span style="color:#b126d7;">u</span><span style="color:#b425dc;">i</span><span style="color:#b624e1;">s</span><span style="color:#b922e6;">t</span><span style="color:#bc21ea;">i</span><span style="color:#be1fef;">c</span><span style="color:#c11ef4;">s</span><span style="color:#be1fef;">.</span><span style="color:#bc21ea;"> </span><span style="color:#b922e6;"> </span><span style="color:#b624e1;"> </span><span style="color:#b425dc;"> </span><span style="color:#b126d7;"> </span></div><div><span style="color:#ae28d2;">S</span><span style="color:#b126d7;">p</span><span style="color:#b425dc;">r</span><span style="color:#b624e1;">i</span><span style="color:#b922e6;">n</span><span style="color:#bc21ea;">g</span><span style="color:#be1fef;"> </span><span style="color:#c11ef4;">2</span><span style="color:#be1fef;">0</span><span style="color:#bc21ea;">2</span><span style="color:#b922e6;">1</span><span style="color:#b624e1;">.</span><span style="color:#b425dc;"> </span><span style="color:#b126d7;"> </span><span style="color:#ae28d2;"> </span><span style="color:#ac29ce;"> </span><span style="color:#a92ac9;"> </span></div>
+            <div><span style="color:#7043ab;">K</span><span style="color:#6f3faf;">e</span><span style="color:#6f3bb3;">v</span><span style="color:#6e37b7;">i</span><span style="color:#6d32bb;">n</span><span style="color:#6d2ebf;"> </span><span style="color:#6c2ac3;">W</span><span style="color:#6b26c7;">e</span><span style="color:#6b22cb;">n</span><span style="color:#6a1ecf;">.</span></div><div><span style="color:#7043ab;">U</span><span style="color:#6f3faf;">C</span><span style="color:#6f3bb3;">L</span><span style="color:#6e37b7;">A</span><span style="color:#6d32bb;"> </span><span style="color:#6d2ebf;">2</span><span style="color:#6c2ac3;">0</span><span style="color:#6b26c7;">2</span><span style="color:#6b22cb;">1</span><span style="color:#6a1ecf;">.</span></div><div><span style="color:#7043ab;">C</span><span style="color:#6f3faf;">o</span><span style="color:#6f3bb3;">m</span><span style="color:#6e37b7;">p</span><span style="color:#6d32bb;">u</span><span style="color:#6d2ebf;">t</span><span style="color:#6c2ac3;">e</span><span style="color:#6b26c7;">r</span><span style="color:#6b22cb;"> </span><span style="color:#6a1ecf;">S</span><span style="color:#691ad3;">c</span><span style="color:#6916d7;">i</span><span style="color:#6811db;">e</span><span style="color:#670ddf;">n</span><span style="color:#6709e3;">c</span><span style="color:#6605e7;">e</span></div><div><span style="color:#7043ab;">&</span><span style="color:#6f3faf;"> </span><span style="color:#6f3bb3;">L</span><span style="color:#6e37b7;">i</span><span style="color:#6d32bb;">n</span><span style="color:#6d2ebf;">g</span><span style="color:#6c2ac3;">u</span><span style="color:#6b26c7;">i</span><span style="color:#6b22cb;">s</span><span style="color:#6a1ecf;">t</span><span style="color:#691ad3;">i</span><span style="color:#6916d7;">c</span><span style="color:#6811db;">s</span></div>
           </span>
           <span class = "text boxed">
             <br><br>
