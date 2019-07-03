@@ -15,9 +15,9 @@
  
   <style>
 body {
-    background-color: white; 
+    background-color: #7043AB; 
     color: #333333;
-    margin: 0
+    margin: 0;
 }
 @-webkit-keyframes slide1 {
     50% {height: 110vh}
@@ -44,11 +44,37 @@ body {
     animation: slide2 3s;
     -webkit-animation: slide2 3s;
   */
-    margin: 0 0 32px 0
+    margin: 0;
+}
+    
+.panel {
+    background-color: white; 
+    box-shadow: 0 32px 32px rgba(0, 0, 0, 0.2); 
+    border-radius: 48px; 
+    margin: 10vw; 
+    padding: 72px 0;
+} 
+.panel::before, .panel::after {
+    content: ""; 
+    background-color: rgba(0, 0, 0, 0.07); 
+    border-radius: 50%; 
+    display: block; 
+    margin-left: -64px; 
+    top: -64px; 
+    position: absolute; 
+    width: 320px; 
+    height: 320px; 
+    z-index: -1
+}
+.panel::after {
+    right: 0; 
+    top: 70vh; 
+    width: 640px; 
+    height: 640px
 }
 .content {
     display: block;
-    padding: 0 10vw;
+    padding: 0 7vw;
 }
     /*
 .container::before {
@@ -93,11 +119,11 @@ body {
     -webkit-text-fill-color: transparent;
     */
 }
-@media only screen and (max-width: 640px) {
-.title {
-    font-size: 28px;
+@media only screen and (max-width: 780px) {
+.title {font-size: 18px}
+.title span {text-shadow: none}
 }
-}
+    /*
 .title.first::after {
     content: ""; 
     background-image: url(downtown-losangeles-compress.jpg); 
@@ -111,13 +137,13 @@ body {
     height: 100vh; 
     z-index: -1
  }
+    */
 .title span {
     text-shadow: -1px 1px, 1px 1px, 1px 1px
 }
 .text, .description {
     font-family: "DM Serif Display", serif;
     display: block;
-    max-width: 640px;
 }
 a {
     text-decoration: none;
@@ -164,6 +190,7 @@ a:hover {
       <div class = "card">
         <div class = "content">
           <span class = "title first">
+            <br><br>
             <div><span style="color:#7043ab;">K</span><span style="color:#6f3faf;">e</span><span style="color:#6f3bb3;">v</span><span style="color:#6e37b7;">i</span><span style="color:#6d32bb;">n</span><span style="color:#6d2ebf;"> </span><span style="color:#6c2ac3;">W</span><span style="color:#6b26c7;">e</span><span style="color:#6b22cb;">n</span><span style="color:#6a1ecf;">.</span></div><div><span style="color:#7043ab;">U</span><span style="color:#6f3faf;">C</span><span style="color:#6f3bb3;">L</span><span style="color:#6e37b7;">A</span><span style="color:#6d32bb;"> </span><span style="color:#6d2ebf;">2</span><span style="color:#6c2ac3;">0</span><span style="color:#6b26c7;">2</span><span style="color:#6b22cb;">1</span><span style="color:#6a1ecf;">.</span></div><div><span style="color:#7043ab;">C</span><span style="color:#6f3faf;">o</span><span style="color:#6f3bb3;">m</span><span style="color:#6e37b7;">p</span><span style="color:#6d32bb;">u</span><span style="color:#6d2ebf;">t</span><span style="color:#6c2ac3;">e</span><span style="color:#6b26c7;">r</span><span style="color:#6b22cb;"> </span><span style="color:#6a1ecf;">S</span><span style="color:#691ad3;">c</span><span style="color:#6916d7;">i</span><span style="color:#6811db;">e</span><span style="color:#670ddf;">n</span><span style="color:#6709e3;">c</span><span style="color:#6605e7;">e</span></div><div><span style="color:#7043ab;">&</span><span style="color:#6f3faf;"> </span><span style="color:#6f3bb3;">L</span><span style="color:#6e37b7;">i</span><span style="color:#6d32bb;">n</span><span style="color:#6d2ebf;">g</span><span style="color:#6c2ac3;">u</span><span style="color:#6b26c7;">i</span><span style="color:#6b22cb;">s</span><span style="color:#6a1ecf;">t</span><span style="color:#691ad3;">i</span><span style="color:#6916d7;">c</span><span style="color:#6811db;">s</span></div>
           </span>
           <span class = "text boxed">
