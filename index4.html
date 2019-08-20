@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8"/>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href = "https://fonts.googleapis.com/css?family=Questrial" rel = "stylesheet"/>
+  <link href = "https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel = "stylesheet">
+  <link href = "/programmingfonts.css" rel = "stylesheet"/>
+  
+  <meta name = "theme-color" content = "#FFFFFF" />
+
+  <title>Kevin Wen</title>
+ 
+  <style>
+body {
+    background-color: #7043AB; 
+    color: #333333;
+    margin: 0;
+}
+@-webkit-keyframes slide1 {
+    50% {height: 110vh}
+    60% {height: 110vh}
+    100% {height: 64px}
+}
+@-webkit-keyframes slide1 {
+    0% {height: 110vh}
+    60% {height: 110vh}
+    100% {height: 64px}
+}
+@-webkit-keyframes slide2 {
+    0% {transform: translateX(100%)}
+    50% {transform: translateX(100%)}
+    100% {transform: translateX(0)}
+}
+@-webkit-keyframes slide2 {
+    0% {-webkit-transform: translateX(100%)}
+    50% {-webkit-transform: translateX(100%)}
+    100% {-webkit-transform: translateX(0)}
+}
+.card {
+  /*
+    animation: slide2 3s;
+    -webkit-animation: slide2 3s;
+  */
+    margin: 0;
+}
+    
+.panel {
+    background-color: white; 
+    box-shadow: 0 24px 32px rgba(0, 0, 0, 0.2); 
+    border-radius: 48px; 
+    margin: 10vw; 
+    padding: 72px 0;
+} 
+.panel::before, .panel::after {
+    content: ""; 
+    background-color: rgba(0, 0, 0, 0.07); 
+    border-radius: 50%; 
+    display: block; 
+    margin-left: -64px; 
+    top: -64px; 
+    position: absolute; 
+    width: 320px; 
+    height: 320px; 
+    z-index: -1
+}
+.panel::after {
+    right: 0; 
+    top: 70vh; 
+    width: 640px; 
+    height: 640px
+}
+.content {
+    display: block;
+    padding: 0 7vw;
+}
+    /*
+.container::before {
+    content: " ";
+    animation: slide1 3s;
+    -webkit-animation: slide1 3s;
+    background-color: #9063CB;
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 0.3) inset;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -32px;
+    height: 64px;
+    z-index: 1
+} 
+    */
+    /*
+.content::after {
+    content: "";
+    background-image: url(/downtown-losangeles-compress.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.015;
+    z-index: -1;
+}
+    */
+.big {font-size: 48px}
+.title {
+    font-family: "Questrial", sans-serif; 
+    font-weight: bold; 
+    font-size: 60px; 
+    /*
+    background: rgb(12, 199, 167);
+    background: linear-gradient(120deg, rgba(12, 199, 167, 1) 35%, rgba(0, 255, 117, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+}
+
+    /*
+.title.first::after {
+    content: ""; 
+    background-image: url(downtown-losangeles-compress.jpg); 
+    background-position: left; 
+    border-radius: 0 0 100% 0; 
+    opacity: 0.07; 
+    display: block; 
+    margin-left: -10vw; 
+    width: 100vw; 
+    margin-top: -90vh; 
+    height: 100vh; 
+    z-index: -1
+ }
+    */
+.title span {
+    text-shadow: -1px 1px, 1px 1px, 1px 1px
+}
+.text, .description {
+    font-family: "DM Serif Display", serif;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+a::after {
+    content: " → ";
+    /*
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #00ff84;
+    color: white;
+    text-align: center;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    */
+}
+a:hover {
+    text-decoration: underline
+}
+    /*
+.horizontal-rule {
+    border-top: 1px #9634a7 solid;
+    display: block;
+    width: 64px;
+}
+    */
+@media only screen and (max-width: 780px) {
+.title {font-size: 18px}
+.title span {text-shadow: none}
+}
+  </style>
+  
+  </head>
+<body>
+  <div class = "panel">
+    
+    <div class = "container">
+
+      <!--
+      <div class = "card">
+        <div class = "content">
+          <br>
+          <img class = "portrait" src = "/portrait.jpg" width = "48px" />
+        </div>
+      </div>
+      -->
+    
+      <div class = "card">
+        <div class = "content">
+          <span class = "title first">
+            <br><br>
+            <div><span style="color:#7043ab;">K</span><span style="color:#6a44b1;">e</span><span style="color:#6445b8;">v</span><span style="color:#5d46be;">i</span><span style="color:#5747c5;">n</span><span style="color:#5148cb;"> </span><span style="color:#4b49d1;">W</span><span style="color:#444bd8;">e</span><span style="color:#3e4cde;">n</span></div><div><span style="color:#7043ab;">U</span><span style="color:#6a44b1;">C</span><span style="color:#6445b8;">L</span><span style="color:#5d46be;">A</span><span style="color:#5747c5;"> </span><span style="color:#5148cb;">2</span><span style="color:#4b49d1;">0</span><span style="color:#444bd8;">2</span><span style="color:#3e4cde;">1</span></div><div><span style="color:#7043ab;">C</span><span style="color:#6a44b1;">o</span><span style="color:#6445b8;">m</span><span style="color:#5d46be;">p</span><span style="color:#5747c5;">u</span><span style="color:#5148cb;">t</span><span style="color:#4b49d1;">e</span><span style="color:#444bd8;">r</span><span style="color:#3e4cde;"> </span><span style="color:#384de5;">S</span><span style="color:#324eeb;">c</span><span style="color:#2b4ff2;">i</span></div><div><span style="color:#7043ab;">&</span><span style="color:#6a44b1;"> </span><span style="color:#6445b8;">L</span><span style="color:#5d46be;">i</span><span style="color:#5747c5;">n</span><span style="color:#5148cb;">g</span><span style="color:#4b49d1;">u</span><span style="color:#444bd8;">i</span><span style="color:#3e4cde;">s</span><span style="color:#384de5;">t</span><span style="color:#324eeb;">i</span><span style="color:#2b4ff2;">c</span><span style="color:#2550f8;">s</span></div>
+          </span>
+          <span class = "text boxed">
+            <p>I have interned with NeighborNosh to help develop their ReactJS frontend and Python backend. I have also worked with SuperWorld to help enrich augmented reality content and improve their frontend.</p>
+          </span>
+        </div>
+      </div>
+      
+      <div class = "card">
+        <div class = "content">
+          <span class = "horizontal-rule"></span>
+          <span class = "title">
+            <!--
+            <span style="color:#70c794;">W</span><span style="color:#6cc798;">h</span><span style="color:#69c89c;">a</span><span style="color:#65c8a0;">t</span><span style="color:#62c8a4;"> </span><span style="color:#5ec9a8;">I</span><span style="color:#5bc9ab;"> </span><span style="color:#57caaf;">s</span><span style="color:#54cab3;">p</span><span style="color:#50cab7;">e</span><span style="color:#4dcbbb;">a</span><span style="color:#49cbbf;">k</span>
+            -->
+          </span>
+          <br>
+          <span class = "text">
+            <p>
+            <i class = "bitIcon-cs big boxed"></i>
+            <i class = "bitIcon-cpp big boxed"></i>
+            <i class = "bitIcon-css big boxed"></i>
+            <i class = "bitIcon-html5 big boxed"></i>
+            <i class = "bitIcon-java big boxed"></i>
+            <i class = "bitIcon-js big boxed"></i>
+            <i class = "bitIcon-python big boxed"></i>
+            </p>
+          </span>
+        </div>
+      </div>
+      
+      <div class = "card">
+        <div class = "content">
+          <span class = "horizontal-rule"></span>
+          <span class = "title">
+            <!--
+            <span style="color:#70c794;">L</span><span style="color:#6ec797;">e</span><span style="color:#6bc799;">t</span><span style="color:#69c89c;">'</span><span style="color:#67c89e;">s</span><span style="color:#65c8a1;"> </span><span style="color:#62c8a3;">g</span><span style="color:#60c9a6;">e</span><span style="color:#5ec9a8;">t</span><span style="color:#5bc9ab;"> </span><span style="color:#59c9ad;">i</span><span style="color:#57cab0;">n</span><span style="color:#54cab2;"> </span><span style="color:#52cab5;">t</span><span style="color:#50cab7;">o</span><span style="color:#4ecbba;">u</span><span style="color:#4bcbbc;">c</span><span style="color:#49cbbf;">h</span>
+            -->
+          </span>
+          <span class = "text small bottom">
+            <p>
+            If you came here via my resume, then you should have my contact. Otherwise, feel free to contact me through LinkedIn.</p>
+            <p>
+            <!--<a class = "boxed" href = "https://angel.co/kejie-wen">AngelList</a><br>-->
+            <a class = "boxed" href = "https://linkedin.com/in/kejie-wen">LinkedIn</a>
+            <a class = "boxed" href = "https://github.com/kwen1000">GitHub</a><br>
+            </p>
+          </span>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+</html>
