@@ -179,6 +179,7 @@ input, select, textarea {
 		text-decoration: none;
 		color: #000000;
 		border-bottom: dotted 1px;
+		font-family: "Questrial";
 	}
 
 		a:hover {
