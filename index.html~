@@ -31,7 +31,7 @@
 					<section class="intro">
 						<header>
 							<h1>Kevin Wen</h1>
-							<p><a href="https://github.com/kwen1000"><span class="label">Github</span></a> - <a href="https://linkedin.com/in/kejie-wen">LinkedIn</a></p>
+							<p><a href="#resume"><span class="label">Resume</span></a> - <a href="https://github.com/kwen1000"><span class="label">Github</span></a> - <a href="https://linkedin.com/in/kejie-wen">LinkedIn</a></p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
@@ -52,12 +52,14 @@
 						</div>
 					</section>
                                 <!-- Section -->
-                                        <section id="first">
+                                        <section id="resume">
                                                 <header>
                                                         <h2>My resume</h2>
                                                 </header>
                                                 <div class="content">
-                                                        <a href = "Kevin_Wen_Resume.html">Click here to go to my resume.</a> Just click the cancel button for the prompts.
+                                                        <p><a href = "Kevin_Wen_Resume_.html">Click here to go to my resume.</a></p>
+							<p>For the Contact prompt, just select cancel. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: "(###) ###-### email@email.email.edu". Otherwise, just select cancel. You'll see "HASH INCORRECT" on the resume. Simply ignore it.</p>
+<p>The second prompt just makes my resume editable. Select cancel if you just want to see it. But if want to use my resume template, then choose yes when prompted. When done, press your print keys and save as PDF.</p>
                                                 </div>
                                         </section>	
 <invisible style = "display: none">
