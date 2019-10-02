@@ -5,9 +5,9 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 -->
 <style>
-body {font-family: arial; font-size: 10pt; margin: 0.4in 1in; font-weight: 100; padding: 0; line-height: 1.6}
+body {font-family: Helvetica; font-size: 10pt; margin: 0.4in 1in; font-weight: 100; padding: 0; line-height: 1.6}
 name {font-family: Questrial; font-weight: bold; font-size: 30pt}
-info {font-weight: bold}
+info {font-weight: 400}
 contact {float: right; font-size: 8pt; line-height: 1}
 </style>
 </head>
@@ -36,13 +36,13 @@ if (window.confirm("Allow editable (for spell checking)?")) {
   document.body.setAttribute("contenteditable", "true");
 }
 </script>
-<name><span style="color:#7b6cff;">K</span><span style="color:#7c66f5;">e</span><span style="color:#7d61ea;">v</span><span style="color:#7e5be0;">i</span><span style="color:#7f55d5;">n</span><span style="color:#804fcb;"> </span><span style="color:#814ac0;">W</span><span style="color:#8244b6;">e</span><span style="color:#833eab;">n</span></name><br>
+<name><span style="color:#9f64e5;">K</span><span style="color:#9465e4;">e</span><span style="color:#8865e2;">v</span><span style="color:#7d66e1;">i</span><span style="color:#7167e0;">n</span><span style="color:#6667de;"> </span><span style="color:#5a68dd;">W</span><span style="color:#4f68db;">e</span><span style="color:#4369da;">n</span></name><br>
 <info>UCLA.</info> Bachelor's in Computer Science and Linguistics. Expected Spring 2021.<br>
 Tutored for the Upsilon Pi Epsilon chapter of the University of California Los Angeles.<br>
 Enrolled previously at Pasadena City CoIIege with a GPA of 3.69 with honors.<br>
 Coding with C#, C, C++, JavaScript (including HTML and CSS), and Python.<br>
 <br>
-<divider><span style="color:#7b6cff;">E</span><span style="color:#7c67f6;">x</span><span style="color:#7d62ec;">p</span><span style="color:#7e5de3;">e</span><span style="color:#7f58da;">r</span><span style="color:#7f52d0;">i</span><span style="color:#804dc7;">e</span><span style="color:#8148be;">n</span><span style="color:#8243b4;">c</span><span style="color:#833eab;">e</span></divider><br>
+<divider>Experience</divider><br>
 <info>Noshware.</info> Software Engineer Intern. June 2019 - August 2019.<br>
 Spearheaded Django/Python login endpoint and migration of data to SQLite.<br>
 Deployed endpoint with Amazon/AWS Elastic Beanstalk for multi-platform usage.<br>
@@ -57,7 +57,7 @@ Stylized Bootstrapped CSS of website for MVP presentation to secure seed capital
 Refactored old C# code to use Unity collision for 33% faster ticks per second.<br>
 Restructured singleton design patterns to shrink variable sizes by three-fourths.<br>
 <br>
-<divider><span style="color:#7b6cff;">P</span><span style="color:#7c65f3;">r</span><span style="color:#7d5fe7;">o</span><span style="color:#7e58db;">j</span><span style="color:#8052cf;">e</span><span style="color:#814bc3;">c</span><span style="color:#8245b7;">t</span><span style="color:#833eab;">s</span></div></divider><br>
+<divider>Projects</divider><br>
 Single-Nucleotide Polymorphism (SNiP) Finder project in Xcode C++. March 2019.<br>
 Readied command line interface for repeated executions with low overhead.<br>
 Employed STL to facilitate data storing and searching without other dependencies.<br>
