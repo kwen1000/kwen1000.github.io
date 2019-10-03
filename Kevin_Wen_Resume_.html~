@@ -5,10 +5,12 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 -->
 <style>
-body {font-family: arial; font-size: 10pt; margin: 0.4in 1in; font-weight: 100; padding: 0; line-height: 1.6}
+body {font-family: sans-serif; font-size: 10pt; margin: 0.4in 1in; font-weight: 200; padding: 0; line-height: 1.6}
 bigname {font-family: Questrial; font-size: 30pt}
-info {font-weight: bold}
+info {font-weight: 500}
 contact {float: right; font-size: 8pt; line-height: 1}
+img {float: left; margin-left: -81px; width: 64px}
+.bigMargin {margin-left: 1.4in; margin-right: 0.7in}
 </style>
 </head>
 <body>
@@ -28,21 +30,22 @@ String.prototype.hashCode = function() {
 // alert(prompt("To hash: ").hashCode());
 
 contactHash = "418845698"; // phone number and email address
-var entry = prompt("Contact: ") || "123";
+var entry = prompt("Contact password (cancel if you don't know): ") || "123";
 
-document.querySelector("#contact").innerHTML = (entry.hashCode() == contactHash ? entry : "CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br><br><br> Do not print this page. Ask Kevin for exact contact info format.")+" https://kwen1000.github.io";
+document.querySelector("#contact").innerHTML = (entry.hashCode() == contactHash ? entry : "CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br>")+" https://kwen1000.github.io";
 
-if (window.confirm("Allow editable (for spell checking)?")) {
+if (window.confirm("Allow editable?")) {
   document.body.setAttribute("contenteditable", "true");
 }
 </script>
 <bigname><span style="color:#7b6cff;">K</span><span style="color:#7c66f5;">e</span><span style="color:#7d61ea;">v</span><span style="color:#7e5be0;">i</span><span style="color:#7f55d5;">n</span><span style="color:#804fcb;"> </span><span style="color:#814ac0;">W</span><span style="color:#8244b6;">e</span><span style="color:#833eab;">n</span></bigname><br>
 <info>UCLA.</info> Bachelor's in Computer Science and Linguistics. Expected June 2021.<br>
 Tutored for the Upsilon Pi Epsilon chapter of the University of California, Los Angeles.<br>
-Enrolled previously at Pasadena City CoIIege with a GPA of 3.69 with honors.<br>
+Enrolled previously at Pasadena City CoIIege with a GPA of 3.69 / 4.00.<br>
 Coding with C#, C, C++, JavaScript, and Python using tools like git and Django.<br>
 <br>
 <divider><span style="color:#7b6cff;">E</span><span style="color:#7c67f6;">x</span><span style="color:#7d62ec;">p</span><span style="color:#7e5de3;">e</span><span style="color:#7f58da;">r</span><span style="color:#7f52d0;">i</span><span style="color:#804dc7;">e</span><span style="color:#8148be;">n</span><span style="color:#8243b4;">c</span><span style="color:#833eab;">e</span></divider><br>
+<picture image="images/pic01.jpg"></picture>
 <info>Noshware.</info> Software Engineer Intern. June 2019 - August 2019.<br>
 Spearheaded Django/Python login endpoint and migration of data to SQLite.<br>
 Deployed endpoint with Amazon/AWS Elastic Beanstalk for multi-platform usage.<br>
@@ -56,7 +59,7 @@ Stylized Bootstrapped CSS of website for MVP presentation to secure seed capital
 <info>Rain Brigade.</info> Contract Unity Developer. March 2018 - June 2018.<br>
 Refactored old C# code to use Unity events API for 33% faster ticks per second.<br>
 Restructured singleton design patterns to shrink variable sizes by 75%.<br>
-Tested app on budget Android devices satisfying 60 FPS for playability.<br>
+Tested and built app to make 10% more budget Android devices to be compatible.<br>
 <br>
 <divider><span style="color:#7b6cff;">P</span><span style="color:#7c65f3;">r</span><span style="color:#7d5fe7;">o</span><span style="color:#7e58db;">j</span><span style="color:#8052cf;">e</span><span style="color:#814bc3;">c</span><span style="color:#8245b7;">t</span><span style="color:#833eab;">s</span></div></divider><br>
 <!--
@@ -78,6 +81,15 @@ Leveraged Microsoft Cognitive Services AI to future-proof large scale production
 <br>
 Sentiment-Analyzed Feedback project at Caltech hackathon. March 2017.<br>
 Converted REST API of Google Cloud AI documentation to function with JavaScript.<br>
-Established PHP & MySQL backend with HTML & JavaScript frontend as fullstack boilerplate.
+Established PHP & MySQL backend and HTML & JavaScript frontend boilerplate.
+<script>
+if (window.confirm("Show pictures?")) {
+  var pictures = document.querySelectorAll("picture");
+  for (var i = 0; i < pictures.length; i++) {
+    pictures[i].innerHTML = "<img src="+pictures[i].getAttribute("image")+">";
+  }
+  document.body.className = "bigMargin";
+}
+</script>
 </body>
 </html>
