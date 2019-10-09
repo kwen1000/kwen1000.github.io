@@ -40,7 +40,7 @@ Stylized Bootstrapped CSS of website for MVP presentation to secure seed capital
 <info>Rain Brigade.</info> Contract Unity Developer. March 2018 - June 2018.<br>
 Refactored old C# code to use Unity events API for 30% faster ticks per second.<br>
 Restructured singleton design patterns to shrink variable sizes by 70%.<br>
-Compiled and tested app to encompass 10% more Android devices and extra revenue.<br>
+Compiled and tested app to retain 10% more budget Androids and extra revenue.<br>
 <br>
 <divider><span style="color:#7b6cff;">P</span><span style="color:#7c65f3;">r</span><span style="color:#7d5fe7;">o</span><span style="color:#7e58db;">j</span><span style="color:#8052cf;">e</span><span style="color:#814bc3;">c</span><span style="color:#8245b7;">t</span><span style="color:#833eab;">s</span></div></divider><br>
 <!--
@@ -83,7 +83,7 @@ String.prototype.hashCode = function() {
 // alert(prompt("To hash: ").hashCode());
 
 contactHash = "418845698"; // phone number and email address
-var entry = prompt("Contact password (cancel if you don't know): ") || "123";
+var entry = prompt("Contact password (answer: \"(###) ###-#### ????@go.????????.edu\") (cancel if you don not know): ") || "123";
 
 document.querySelector("#contact").innerHTML = (entry.hashCode() == contactHash ? entry : "CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br>")+" https://kwen1000.github.io";
 
