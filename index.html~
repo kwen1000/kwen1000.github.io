@@ -15,8 +15,6 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,6 +26,16 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 	
   <style>
+    @font-face {
+      font-family: "Questrial";
+      font-style: normal;
+      src: local('Questrial'), local('Questrial-Regular'), url(fonts/questrial.tff) format('truetype');
+    }
+    @font-face {
+      font-family: "Lexend Deca";
+      font-style: normal;
+      src: local('Lexend-Deca'), local('Lexend-Deca-Regular'), url(fonts/lexend.tff) format('truetype');
+    }
     .column {
       font-family: "Lexend Deca", Verdana;
       font-weight: 100;
@@ -40,19 +48,10 @@
     }
     h1 {
       font-size: 32px; 
-      font-weight: bold;
     }
-    /*
-    .image {
-      margin: 32px;
-      width: 100%; 
-      height: 50px;
-    }
-    */
     img {
+      margin: 0 10%;
       width: 80%;
-      margin: 10%;
-      vertical-align: middle;
     }
     /* Larger than phablet */
     @media (min-width: 720px) {
@@ -118,8 +117,8 @@
         <p>For the contact prompt, just select cancel. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: "(###) ###-#### email@domain.edu". If you entered it wrong, you'll see "HASH INCORRECT" on the page. Simply ignore it.<br><br>The rest of the prompts should be straight forward. To save the edited resume, simple print and save as PDF.</p>
 	<a class = "button" href = "Kevin_Wen_Resume_.html">Go to resume.</a>
       </div>
-      <div class="one-half column category">
-	<img class="example-screenshot-wrapper" src="images/pic01.jpg">
+      <div class="one-half column">
+	<img class="" src="images/pic01.jpg">
       </div>
     </div>
   </div>

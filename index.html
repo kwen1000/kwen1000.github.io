@@ -15,8 +15,6 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,6 +26,16 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 	
   <style>
+    @font-face {
+      font-family: "Questrial";
+      font-style: normal;
+      src: local('Questrial'), local('Questrial-Regular'), url(fonts/questrial.tff) format('truetype');
+    }
+    @font-face {
+      font-family: "Lexend Deca";
+      font-style: normal;
+      src: local('Lexend-Deca'), local('Lexend-Deca-Regular'), url(fonts/lexend.tff) format('truetype');
+    }
     .column {
       font-family: "Lexend Deca", Verdana;
       font-weight: 100;
@@ -40,19 +48,10 @@
     }
     h1 {
       font-size: 32px; 
-      font-weight: bold;
     }
-    /*
-    .image {
-      margin: 32px;
-      width: 100%; 
-      height: 50px;
-    }
-    */
     img {
+      margin: 0 10%;
       width: 80%;
-      margin: 10%;
-      vertical-align: middle;
     }
     /* Larger than phablet */
     @media (min-width: 720px) {
@@ -81,19 +80,40 @@
       color: white;
       padding-left: 64px;
       padding-right: 64px;
-      /*
-      background-image: none;
-      background-color: black;
-      border-color: black;
-      */
+    }
+    button:focus, a.button:focus {
+      color: white;
     }
     .name {
       font-size: 32px;
     }
+    .terminal {
+      display: block;
+      width: 100%;
+    }
+    .codeText {
+      background-color: #333333;
+      color: #EEEEEE;
+      display: table-cell;
+      vertical-align: bottom;
+      width: 100vw;
+      height: 200px;
+    }
   </style>
 
   <script>
-	// setTimeout(function() {window.location.reload()}, 7000);
+    function awesomesauce() {
+	var commands = "\n cd tardis\n ls -a\n find . | grep best\n git log\n exit";
+        var outputQueue = ["", "", ".git .weepingangel screwdriver.tar tennant", "./tennant/bestdoctor.sh", "commit a1b2c3d4 (HEAD -> master)\nAuthor: Angel 1 <angel1@fifthdimension>\nDate:   Fri Jan 32 23:59:59 2010 -0000\n\n    don't blink\n"]
+	for (var i = 0; i < commands.length; i++) {
+	    (function(char, i) {
+		    setTimeout(function() {
+			    if (char == "\n") {char = "\n" + outputQueue.shift() + "\n~ awesomesauce $"}
+			    document.querySelector(".codeText").innerText += char;
+		    }, i * 500)
+	    }) (commands[i], i);
+	}
+    }
   </script>
 
 </head>
@@ -113,13 +133,16 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="one-half column">
+      <div class="full column">
         <h1>Resume</h1>
-        <p>For the contact prompt, just select cancel. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: "(###) ###-#### email@domain.edu". If you entered it wrong, you'll see "HASH INCORRECT" on the page. Simply ignore it.<br><br>The rest of the prompts should be straight forward. To save the edited resume, simple print and save as PDF.</p>
-	<a class = "button" href = "Kevin_Wen_Resume_.html">Go to resume.</a>
+        <p>For the contact prompt, just select cancel. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: <code>(###) ###-#### email@domain.edu</code>. If you entered it wrong, you'll see "HASH INCORRECT" on the page. Simply ignore it.<br><br>The rest of the prompts should be straight forward. To save the edited resume, just print and save as PDF.</p>
+	<a class="button" href="Kevin_Wen_Resume_.html">Go to resume.</a>
       </div>
-      <div class="one-half column category">
-	<img class="example-screenshot-wrapper" src="images/pic01.jpg"/>
+      <div class="full column">
+	<h1>Some of my favorite Linux commands</h1>
+	<p></p>
+	<pre class="terminal"><code class="codeText"></code></pre>
+	<button onclick="awesomesauce(); this.onclick = null;">See them!</button>
       </div>
     </div>
   </div>
