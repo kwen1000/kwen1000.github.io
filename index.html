@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>Kevin Wen</title>
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Kevin Wen">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,6 +36,11 @@
       font-style: normal;
       src: local('Lexend-Deca'), local('Lexend-Deca-Regular'), url(fonts/lexend.tff) format('truetype');
     }
+    .section:first-child {
+      background-image: url(images/back01.jpg);
+      background-size: cover;
+      background-repeat: repeat-x;
+    }
     .column {
       font-family: "Lexend Deca", Verdana;
       font-weight: 100;
@@ -63,10 +68,9 @@
       border: none; 
       border-radius: 50px;
       background-image: url(data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjUwMHB4IiBoZWlnaHQ9IjUwMHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogPGRlZnM+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAuNSIgeTE9IjAiIHgyPSIwLjUiIHkyPSIxIj4KICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSJyZ2IoMjU1LCAxMjAsIDApIiAvPgogICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9InJnYigyNTUsIDgwLCAxMDApIiAvPgogIDwvbGluZWFyR3JhZGllbnQ+CiA8L2RlZnM+CiA8Zz4KICA8cmVjdCBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgc3Ryb2tlLXdpZHRoPSIwIiB4PSIwIiB5PSIwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgLz4KIDwvZz4KPC9zdmc+CiAgICA=);
-      /* background-color: rgb(255, 120, 0); */
       background-size: contain;
       color: white;
-      box-shadow: 0 5px 0 #CCCCCC;
+      box-shadow: 0 5px 0 rgba(0, 0, 0, 0.15);
       font-family: Questrial;
       font-size: 16px;
       font-weight: normal;
@@ -99,18 +103,55 @@
       width: 100vw;
       height: 200px;
     }
+    .mask {
+      overflow-x: scroll;
+    }
+    .images {
+      display: table;
+    }
+    .image {
+      background-size: cover;
+      background-position: center;
+      border: 16px solid #FFFFFF;
+      border-radius: 32px;
+      display: table-cell;
+      text-align: center;
+      transition: min-width 0.5s;
+      vertical-align: middle;
+      min-width: 240px;
+      height: 320px;
+      z-index: 100;
+    }
+    .image:hover {
+      min-width: 320px;
+    }
+    /*
+    .image:focus {
+      position: absolute;
+      left: 0;
+      min-width: 480px;
+    }
+    .image:focus::before {
+      content: " ";
+      background-color: #000000;
+      width: 100vw;
+      height: 320px;
+    }
+    */
   </style>
 
   <script>
     function awesomesauce() {
-	var commands = "\n echo 'Hello World'\n ls -a\n find . | grep best\n git log\n exit";
-        var outputQueue = ["", "Hello World", ".git .weepingangel screwdriver.tar tennant", "./tennant/bestdoctor.sh", "commit a1b2c3d4 (HEAD -> master)\nAuthor: Angel 1 <angel1@fifthdimension>\nDate:   Fri Jan 32 23:59:59 2010 -0000\n\n    don't blink\n"]
+	var commands = "\n cat ../phonebox\n ls -a\n find . | grep best\n git log\n exit";
+        var outputQueue = ["", "Bigger in the inside.", ".git .weepingangel screwdriver.tar tennant", "./tennant/bestdoctor.sh", "commit a1b2c3d4 (HEAD -> master)\nAuthor: Angel 1 <angel1@fifthdimension>\nDate:   Fri Jan 32 23:59:59 2010 -0000\n\n    don't blink\n"]
 	for (var i = 0; i < commands.length; i++) {
 	    (function(char, i) {
-		    setTimeout(function() {
-			    if (char == "\n") {char = "\n" + outputQueue.shift() + "\n~ awesomesauce $"}
-			    document.querySelector(".codeText").innerText += char;
-		    }, i * 500)
+		setTimeout(function() {
+		    if (char == "\n") {
+			char = "\n" + outputQueue.shift() + "\n<b>~ awesomesauce $</b>"
+		    }
+		    document.querySelector(".codeText").innerHTML += char;
+	        }, i * 500)
 	    }) (commands[i], i);
 	}
     }
@@ -122,6 +163,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+<div class="section">
   <div class="container">
     <div class="row">
       <div class="full column">
@@ -131,6 +173,22 @@
 	<a class="button" href="https://linkedin.com/in/kejie-wen">LinkedIn</a>
       </div>
    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="full column">
+	<div class="mask">
+          <div class="images">
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic01.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic02.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic03.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(downtown-losangeles-compress.jpg)"></a>
+          </div>
+	</div>
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row">
@@ -147,6 +205,7 @@
       </div>
     </div>
   </div>
+</section>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
