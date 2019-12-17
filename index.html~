@@ -104,7 +104,7 @@
       height: 200px;
     }
     .mask {
-      overflow-x: scroll;
+      overflow-x: scroll
     }
     .images {
       display: table;
@@ -116,14 +116,14 @@
       border-radius: 32px;
       display: table-cell;
       text-align: center;
-      transition: min-width 0.5s;
+      transition: width 0.5s;
       vertical-align: middle;
-      min-width: 240px;
+      width: 160px;
       height: 320px;
       z-index: 100;
     }
     .image:hover {
-      min-width: 320px;
+      width: 480px;
     }
     /*
     .image:focus {
@@ -184,7 +184,8 @@
             <a class="image" href="javascript:void()" style="background-image: url(images/pic01.jpg)"></a>
             <a class="image" href="javascript:void()" style="background-image: url(images/pic02.jpg)"></a>
             <a class="image" href="javascript:void()" style="background-image: url(images/pic03.jpg)"></a>
-            <a class="image" href="javascript:void()" style="background-image: url(downtown-losangeles-compress.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic04.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic05.jpg)"></a>
           </div>
 	</div>
       </div>
