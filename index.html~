@@ -125,9 +125,10 @@
   <div class="container">
     <div class="row">
       <div class="full column">
-	<p class = "name">Kevin Wen</p>
+	<p class="name">Kevin Wen</p>
         <h1>Computer Science and Linguistics student from UCLA graduating 2021.</h1>
-	<button>Learn more.</button>
+	<a class="button" href="https://github.com/kwen1000">Github</a>
+	<a class="button" href="https://linkedin.com/in/kejie-wen">LinkedIn</a>
       </div>
    </div>
   </div>
