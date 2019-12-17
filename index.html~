@@ -36,7 +36,7 @@
       font-style: normal;
       src: local('Lexend-Deca'), local('Lexend-Deca-Regular'), url(fonts/lexend.tff) format('truetype');
     }
-    .section:first-child {
+    .section:first-child, .section:nth-child(3) {
       background-image: url(images/back01.jpg);
       background-size: cover;
       background-repeat: repeat-x;
@@ -103,6 +103,41 @@
       width: 100vw;
       height: 200px;
     }
+    .mask {
+      overflow-x: scroll;
+    }
+    .images {
+      display: table;
+    }
+    .image {
+      background-size: cover;
+      background-position: center;
+      border: 16px solid #FFFFFF;
+      border-radius: 32px;
+      display: table-cell;
+      text-align: center;
+      transition: min-width 0.5s;
+      vertical-align: middle;
+      min-width: 240px;
+      height: 320px;
+      z-index: 100;
+    }
+    .image:hover {
+      min-width: 320px;
+    }
+    /*
+    .image:focus {
+      position: absolute;
+      left: 0;
+      min-width: 480px;
+    }
+    .image:focus::before {
+      content: " ";
+      background-color: #000000;
+      width: 100vw;
+      height: 320px;
+    }
+    */
   </style>
 
   <script>
@@ -128,7 +163,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<div class="section">
+<div class="section hero">
   <div class="container">
     <div class="row">
       <div class="full column">
@@ -140,7 +175,23 @@
    </div>
   </div>
 </div>
-<div class="section">
+<div class="section gallery">
+  <div class="container">
+    <div class="row">
+      <div class="full column">
+	<div class="mask">
+          <div class="images">
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic01.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic02.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(images/pic03.jpg)"></a>
+            <a class="image" href="javascript:void()" style="background-image: url(downtown-losangeles-compress.jpg)"></a>
+          </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section resume">
   <div class="container">
     <div class="row">
       <div class="full column">
@@ -148,6 +199,12 @@
         <p>For the contact prompt, just select cancel. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: <code>(###) ###-#### email@domain.edu</code>. If you entered it wrong, you'll see "HASH INCORRECT" on the page. Simply ignore it.<br><br>The rest of the prompts should be straight forward. To save the edited resume, just print and save as PDF.</p>
 	<a class="button" href="Kevin_Wen_Resume_.html">Go to resume.</a>
       </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="row">
       <div class="full column">
 	<h1>Some of my favorite Linux commands</h1>
 	<p></p>
