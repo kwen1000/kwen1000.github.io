@@ -1,11 +1,17 @@
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-<!--
-<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
--->
 <style>
-body {font-family: arial; font-size: 10pt; margin: 0.4in 1in; font-weight: 200; padding: 0; line-height: 1.6}
+    @font-face {
+      font-family: "Questrial";
+      font-style: normal;
+      src: local('Questrial'), local('Questrial-Regular'), url(fonts/questrial.tff) format('truetype');
+    }
+    @font-face {
+      font-family: "Lexend Deca";
+      font-style: normal;
+      src: local('Lexend-Deca'), local('Lexend-Deca-Regular'), url(fonts/lexend.tff) format('truetype');
+    }
+body {font-family: Arial; font-size: 10pt; margin: 0.4in 1in; font-weight: 200; padding: 0; line-height: 1.6}
 bigname {font-family: Questrial; font-size: 30pt}
 info {font-weight: bold}
 contact {float: right; font-size: 8pt; line-height: 1.2; width: 120px}
@@ -18,28 +24,28 @@ border {float: left; margin-left: -56px; margin-top: 16px}
 <contact id="contact">kwen1000.github.io</contact><br>
 <bigname><span style="color:#7b6cff;">K</span><span style="color:#7c66f5;">e</span><span style="color:#7d61ea;">v</span><span style="color:#7e5be0;">i</span><span style="color:#7f55d5;">n</span><span style="color:#804fcb;"> </span><span style="color:#814ac0;">W</span><span style="color:#8244b6;">e</span><span style="color:#833eab;">n</span></bigname><br>
 <picture image="images/i1.png"></picture>
-<info>UCLA.</info> Bachelor's in Computer Science and Linguistics. Expected Spring 2021.<br>
-Tutored for the Upsilon Pi Epsilon chapter of the University of California, Los Angeles.<br>
-Enrolled previously at Pasadena City CoIIege with a GPA of 3.69 / 4.00.<br>
-Coding with C#, C, C++, JavaScript, and Python with help from git and Linux bash.<br>
+<info>University of California Los Angeles (UCLA)</info>. Expected Spring 2021.<br>
+Current enrollment for a Bachelor's in Computer Science and Linguistics. <br>
+Previous enrollment at Pasadena City CoIIege with a GPA of 3.68 / 4.00.<br>
+Coding with C#, C, C++, JavaScript, and Python with git as version control.<br>
 <br>
 <divider><span style="color:#7b6cff;">E</span><span style="color:#7c67f6;">x</span><span style="color:#7d62ec;">p</span><span style="color:#7e5de3;">e</span><span style="color:#7f58da;">r</span><span style="color:#7f52d0;">i</span><span style="color:#804dc7;">e</span><span style="color:#8148be;">n</span><span style="color:#8243b4;">c</span><span style="color:#833eab;">e</span></divider><br>
 <picture image="images/i2.png"></picture>
-<info>Noshware.</info> Software Engineer Intern. June 2019 - August 2019.<br>
-Spearheaded Django/Python login endpoint and migration of data to SQLite.<br>
-Deployed with Amazon/AWS Elastic Beanstalk for crucial multi-platform API.<br>
+<info>Noshware.</info> Software Engineer Intern. June 2019 - August 2019. Burbank.<br>
+Spearheaded Django (Python) login endpoint and migration of data to SQLite.<br>
+Deployed with AWS (Amazon) Elastic Beanstalk for crucial multi-platform API.<br>
 Appended inventory dashboard to ReactJS site furthering clientele retention.<br>
 <br>
 <picture image="images/i3.jpg"></picture>
-<info>SuperWorld.</info> Developer Intern. June 2018 - August 2018.<br>
+<info>SuperWorld.</info> Developer Intern. June 2018 - August 2018. Los Angeles.<br>
 Transformed Unity C# codebase to finite state automata simplifying size by half.<br>
 Implemented Mapbox JavaScript features for blockchain venture on-boarding.<br>
 Stylized Bootstrapped CSS of website for MVP presentation to secure seed capital.<br>
 <br>
 <picture image="images/i4.png"></picture>
-<info>Rain Brigade.</info> Contract Unity Developer. March 2018 - June 2018.<br>
+<info>Rain Brigade.</info> Contract Unity Developer. March 2018 - June 2018. Los Angeles.<br>
 Refactored old C# code to use Unity events API for 20% faster ticks per second.<br>
-Restructured singleton design patterns to shrink variable sizes by three-fourth.<br>
+Restructured singleton design patterns to shrink variable sizes by three-fourths.<br>
 Compiled and tested app to retain 10% more budget Androids and extra revenue.<br>
 <br>
 <divider><span style="color:#7b6cff;">P</span><span style="color:#7c65f3;">r</span><span style="color:#7d5fe7;">o</span><span style="color:#7e58db;">j</span><span style="color:#8052cf;">e</span><span style="color:#814bc3;">c</span><span style="color:#8245b7;">t</span><span style="color:#833eab;">s</span></div></divider><br>
@@ -49,24 +55,24 @@ Designed Django Python backend to accept image upload from JavaScript frontend.<
 <br>
 -->
 <picture image="images/i5.png"></picture>
-Single-Nucleotide Polymorphism (SNiP) Finder project in Xcode C++. March 2019.<br>
-Employed STL to facilitate data storing and searching without other dependencies.<br>
-Debugged to ensure program works with millions of genetic data and large files.<br>
+QuickShort<br>
+URL shortener project built with NodeJS and managed with npm on Linux shells.<br>
+Integrated MongoDB SDK and ExpressJS and interfaced with JSON data.<br>
 <br>
 <picture image="images/i6.png"></picture>
-Game project with Visual Studios C++ completed in two weeks. February 2019.<br>
-Hardcoded physics and collision mechanics focusing on low power draw.<br>
-Minimized code smell such as duplicated code and contrived complexity.<br>
+JavNote<br>
+Windowed notepad application built with Java with UI elements from Swing.<br>
+Furnished Bash script for easy compilation and diagnosing compile errors.<br>
 <br>
 <picture image="images/i7.png"></picture>
-Assistant for the Blind project at Long Beach hackathon. April 2017.<br>
-Prototyped JavaScript webapp with speech synthesis and OCR as a boilerplate.<br>
-Leveraged Microsoft Cognitive Services AI to future-proof large scale production.<br>
+Geneomics<br>
+Single-Nucleotide Polymorphism (SNiP) DNA Finder project in Xcode C++.<br>
+Employed STL efficiently to work with millions of genetic data and large files.<br>
 <br>
 <picture image="images/i8.png"></picture>
-Sentiment-Analyzed Feedback project at Caltech hackathon. March 2017.<br>
-Converted REST API of Google Cloud AI documentation to function with JavaScript.<br>
-Established PHP & MySQL backend and HTML & JavaScript frontend boilerplate.
+eGo Maps<br>
+Google Maps webapp client built with JavaScript and HTML5 with styling from CSS.<br>
+Optimized usage of the HTML5 Canvas and the JS DOM limiting dragging latency.<br>
 </body>
 <script>
 String.prototype.hashCode = function() {
