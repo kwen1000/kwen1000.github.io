@@ -288,7 +288,7 @@
 	<a href="javascript:start25Minutes();" class="button min25">25 min productivity</a>
 	<a href="javascript:start5Minutes();" class="button min5">5 min break</a>
 	<a href="javascript:start10Minutes();" class="button min10">10 min break</a>
-	<p><br>Grant notifications when prompted if you want to be reminded when a timer stops.</p>
+	<p><br>Grant notifications when prompted if you want to be reminded when a timer stops. Or, <a href="javascript:notify('Notifications granted!')"click here to enable notifications</a>.</p>
       </div>
     </div>
   </div>
