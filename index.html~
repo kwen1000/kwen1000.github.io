@@ -163,34 +163,41 @@
       }
     }
 
+    function _$(selector) {
+      return document.querySelector(selector);
+    }
+
     function start25Minutes() {
       if (document.querySelector(".min25").innerText.match("25") == null)
         return;
-      document.querySelector(".min25").innerText = "> 24 mins";
+      document.querySelector(".min25").innerText = "> 24 min";
       for (var i = 0; i < 25; i++) {
-	setTimeout("document.querySelector('.min25').innerText = '"+(24 - i)+" mins';", 60000 * (i + 1));
+	var remain = (24 - i)+" min";
+	setTimeout("_$('.min25').innerText = '"+remain+"'; document.title = '"+remain+"'", 60000 * (i + 1));
       }
-      setTimeout("document.querySelector('.min25').innerText = 'Start 25 min'; notify('Break time!')", 60000 * (25));
+      setTimeout("_$('.min25').innerText = 'Start 25 min'; notify('Break time!'); document.title = 'Break time!'", 60000 * (25));
     }
 
     function start5Minutes() {
       if (document.querySelector(".min5").innerText.match("5") == null)
         return;
-      document.querySelector(".min5").innerText = "> 4 mins";
+      document.querySelector(".min5").innerText = "> 4 min";
       for (var i = 0; i < 5; i++) {
-	setTimeout("document.querySelector('.min5').innerText = '"+(4 - i)+" mins';", 60000 * (i + 1));
+	var remain = (4 - i)+" min";
+	setTimeout("_$('.min5').innerText = '"+remain+" min';", 60000 * (i + 1));
       }
-      setTimeout("document.querySelector('.min5').innerText = 'Start 5 min'; notify('Back to work!')", 60000 * (5));
+      setTimeout("_$('.min5').innerText = 'Start 5 min'; notify('Back to work!'); document.title = 'Back to work!'", 60000 * (5));
     }
 
     function start10Minutes() {
       if (document.querySelector(".min10").innerText.match("10") == null)
         return;
-      document.querySelector(".min10").innerText = "> 9 mins";
+      document.querySelector(".min10").innerText = "> 9 min";
       for (var i = 0; i < 10; i++) {
-	setTimeout("document.querySelector('.min10').innerText = '"+(9 - i)+" mins';", 60000 * (i + 1));
+	var remain = (9 - i)+" min";
+	setTimeout("_$('.min10').innerText = '"+remain+"';", 60000 * (i + 1));
       }
-      setTimeout("document.querySelector('.min10').innerText = 'Start 10 min'; notify('Back to work!')", 60000 * (10));
+      setTimeout("_$('.min10').innerText = 'Start 10 min'; notify('Back to work!'); document.title = 'Back to work!'", 60000 * (10));
     }
 
     function awesomesauce() {
