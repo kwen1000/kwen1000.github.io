@@ -36,7 +36,7 @@
       font-style: normal;
       src: local('Lexend-Deca'), local('Lexend-Deca-Regular'), url(fonts/lexend.tff) format('truetype');
     }
-    .section:first-child, .section:nth-child(3) {
+    .section:first-child, .section:nth-child(3), .section:nth-child(5) {
       background-image: url(images/back01.jpg);
       background-size: cover;
       background-repeat: repeat-x;
@@ -148,19 +148,76 @@
   </style>
 
   <script>
+    function notify(message) {
+      if (!("Notification" in window)) {
+        // alert("Notifications not supported.");
+      }
+      else if (Notification.permission == "granted") {
+        var notification = new Notification(message);
+      }
+      else if (Notification.permission != "denied") {
+        Notification.requestPermission().then(function(access) {
+          if (access == "granted")
+            var notification = new Notification(message);
+        });
+      }
+    }
+
+    function _$(selector) {
+      return document.querySelector(selector);
+    }
+
+    function start25Minutes() {
+      if (document.querySelector(".min25").innerText.match("25") == null)
+        return;
+      document.querySelector(".min25").innerText = "> 24 min";
+      for (var i = 0; i < 25; i++) {
+	var remain = (24 - i)+" min";
+	setTimeout("_$('.min25').innerText = '"+remain+"'; document.title = '"+remain+"'", 60000 * (i + 1));
+      }
+      setTimeout("_$('.min25').innerText = 'Start 25 min'; notify('Break time!'); document.title = 'Break time!'", 60000 * (25));
+    }
+
+    function start5Minutes() {
+      if (document.querySelector(".min5").innerText.match("5") == null)
+        return;
+      document.querySelector(".min5").innerText = "> 4 min";
+      for (var i = 0; i < 5; i++) {
+	var remain = (4 - i)+" min";
+	setTimeout("_$('.min5').innerText = '"+remain+" min';", 60000 * (i + 1));
+      }
+      setTimeout("_$('.min5').innerText = 'Start 5 min'; notify('Back to work!'); document.title = 'Back to work!'", 60000 * (5));
+    }
+
+    function start10Minutes() {
+      if (document.querySelector(".min10").innerText.match("10") == null)
+        return;
+      document.querySelector(".min10").innerText = "> 9 min";
+      for (var i = 0; i < 10; i++) {
+	var remain = (9 - i)+" min";
+	setTimeout("_$('.min10').innerText = '"+remain+"';", 60000 * (i + 1));
+      }
+      setTimeout("_$('.min10').innerText = 'Start 10 min'; notify('Back to work!'); document.title = 'Back to work!'", 60000 * (10));
+    }
+
     function awesomesauce() {
-	var commands = "\n cat ../phonebox\n ls -a\n find . | grep best\n git log\n exit";
-        var outputQueue = ["", "Bigger in the inside.", ".git .weepingangel screwdriver.tar tennant", "./tennant/bestdoctor.sh", "commit a1b2c3d4 (HEAD -> master)\nAuthor: Angel 1 <angel1@fifthdimension>\nDate:   Fri Jan 32 23:59:59 2010 -0000\n\n    don't blink\n"]
-	for (var i = 0; i < commands.length; i++) {
-	    (function(char, i) {
-		setTimeout(function() {
-		    if (char == "\n") {
-			char = "\n" + outputQueue.shift() + "\n<b>~ awesomesauce $</b>"
-		    }
-		    document.querySelector(".codeText").innerHTML += char;
-	        }, i * 500)
-	    }) (commands[i], i);
-	}
+      var commands = "\n cat ../phonebox\n ls -a\n find . | grep best\n git log\n exit";
+      var outputQueue = 
+        ["", 
+        "Bigger in the inside.", 
+        ".git .weepingangel screwdriver.tar tennant", 
+        "./tennant/bestdoctor.sh", 
+        "commit a1b2c3d4 (HEAD -> master)\nAuthor: Angel 1 <angel1@fifthdimension>\nDate:   Fri Jan 32 23:59:59 2010 -0000\n\n    don't blink\n"];
+      for (var i = 0; i < commands.length; i++) {
+	(function(char, i) {
+	  setTimeout(function() {
+	    if (char == "\n") {
+	      char = "\n" + outputQueue.shift() + "\n<b>~ awesomesauce $</b>"
+	    }
+	    document.querySelector(".codeText").innerHTML += char;
+          }, i * 500)
+        }) (commands[i], i);
+      }
     }
   </script>
 
@@ -221,7 +278,20 @@
       </div>
     </div>
   </div>
-</section>
+</div>
+<div class="section tomato">
+  <div class="container">
+    <div class="row">
+      <div class="full column">
+	<h1>Tomato time managment timer</h1>
+	<p>Based off of the popular time management technique, with the trademark name translating to "tomato" in Italian. I have this here for my personal usage, but you're more than welcome to use it. But this ain't all I've done! Check out my other projects displayed on Github.</p>
+	<a href="javascript:start25Minutes();" class="button min25">25 min productivity</a>
+	<a href="javascript:start5Minutes();" class="button min5">5 min break</a>
+	<a href="javascript:start10Minutes();" class="button min10">10 min break</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

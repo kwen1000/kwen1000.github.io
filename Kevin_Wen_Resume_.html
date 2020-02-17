@@ -24,7 +24,7 @@ border {float: left; margin-left: -56px; margin-top: 16px}
 <contact id="contact">kwen1000.github.io</contact><br>
 <bigname><span style="color:#7b6cff;">K</span><span style="color:#7c66f5;">e</span><span style="color:#7d61ea;">v</span><span style="color:#7e5be0;">i</span><span style="color:#7f55d5;">n</span><span style="color:#804fcb;"> </span><span style="color:#814ac0;">W</span><span style="color:#8244b6;">e</span><span style="color:#833eab;">n</span></bigname><br>
 <picture image="images/i1.png"></picture>
-<info>University of California Los Angeles (UCLA)</info>. Expected Spring 2021.<br>
+<info>University of California Los Angeles (UCLA)</info>. Expected June 2021.<br>
 Current enrollment for a Bachelor's in Computer Science and Linguistics. <br>
 Previous enrollment at Pasadena City CoIIege with a GPA of 3.68 / 4.00.<br>
 Coding with C#, C, C++, JavaScript, and Python with git as version control.<br>
@@ -56,13 +56,13 @@ Designed Django Python backend to accept image upload from JavaScript frontend.<
 -->
 <picture image="images/i5.png"></picture>
 QuickShort<br>
-URL shortener project built with NodeJS and managed with npm on Linux shells.<br>
-Integrated the MongoDB SDK to output JSON data as an API endpoint.<br>
+URL shortener project built with NodeJS and managed with NPM on Linux shells.<br>
+Integrated ExpressJS and MongoDB SDK while outputting JSON data as endpoint.<br>
 <br>
 <picture image="images/i6.png"></picture>
 JavNote<br>
 Windowed notepad application built with Java with UI elements from Swing.<br>
-Furnished Bash script for easy compilation and diagnosing compile errors.<br>
+Furnished Bash shell script for easy compilation and diagnosing compile errors.<br>
 <br>
 <picture image="images/i7.png"></picture>
 Geneomics<br>
@@ -88,8 +88,9 @@ String.prototype.hashCode = function() {
 
 // alert(prompt("To hash: ").hashCode());
 
+var promptText = "Enter contact password. \n(Answer: \"(###) ###-#### ????@go.????????.edu\") \n(Cancel if you do not know.)"
 contactHash = "418845698"; // phone number and email address
-var entry = prompt("Enter contact password. \n(Answer: \"(###) ###-#### ????@go.????????.edu\") \n(Cancel if you do not know.)") || "123";
+var entry = prompt(promptText) || "123";
 
 document.querySelector("#contact").innerHTML = (entry.hashCode() == contactHash ? entry : "CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br> CONTACT HASH INCORRECT.<br>")+" https://kwen1000.github.io";
 
