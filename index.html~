@@ -283,11 +283,12 @@
   <div class="container">
     <div class="row">
       <div class="full column">
-	<h1>Tomato time managment timer</h1>
-	<p>Based off of the popular time management technique, with the trademark name translating to "tomato" in Italian. I have this here for my personal usage, but you're more than welcome to use it. But this ain't all I've done! Check out my other projects displayed on Github.</p>
+	<h1>Tomato productivity timer</h1>
+	<p>Timer based off of the popular productivity technique with the trademark name translating to "tomato" in Italian. I have this here for my personal usage, but you are more than welcome to use it. But this ain't all I've done! Check out my other projects displayed on Github.</p>
 	<a href="javascript:start25Minutes();" class="button min25">25 min productivity</a>
 	<a href="javascript:start5Minutes();" class="button min5">5 min break</a>
 	<a href="javascript:start10Minutes();" class="button min10">10 min break</a>
+	<p><br>Grant notifications when prompted if you want to be reminded when a timer stops.</p>
       </div>
     </div>
   </div>
