@@ -170,6 +170,7 @@
     function start25Minutes() {
       if (document.querySelector(".min25").innerText.match("25") == null)
         return;
+      document.title = "10 min";
       document.querySelector(".min25").innerText = "> 24 min";
       for (var i = 0; i < 25; i++) {
 	var remain = (24 - i)+" min";
@@ -181,6 +182,7 @@
     function start5Minutes() {
       if (document.querySelector(".min5").innerText.match("5") == null)
         return;
+      document.title = "5 min";
       document.querySelector(".min5").innerText = "> 4 min";
       for (var i = 0; i < 5; i++) {
 	var remain = (4 - i)+" min";
@@ -192,6 +194,7 @@
     function start10Minutes() {
       if (document.querySelector(".min10").innerText.match("10") == null)
         return;
+      document.title = "10 min";
       document.querySelector(".min10").innerText = "> 9 min";
       for (var i = 0; i < 10; i++) {
 	var remain = (9 - i)+" min";
@@ -261,7 +264,7 @@
     <div class="row">
       <div class="full column">
         <h1>Resume</h1>
-        <p>For the contact prompt, just select cancel. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: <code>(###) ###-#### email@domain.edu</code>. If you entered it wrong, you'll see "HASH INCORRECT" on the page. Simply ignore it.<br><br>The rest of the prompts should be straight forward. To save the edited resume, just print and save as PDF.</p>
+        <p>For the contact prompt just select cancel or leave blank. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: <code>(###) ###-#### email@domain.edu</code>. If you cancel, leave it blank, or enter it wrong then you'll see "HASH INCORRECT" on the resume. You can ignore it or edit it out with the edit page prompt.<br><br>The rest of the prompts should be straightforward. Save the page as a PDF when done.</p>
 	<a class="button" href="Kevin_Wen_Resume_.html">Go to resume.</a>
       </div>
     </div>
@@ -284,11 +287,11 @@
     <div class="row">
       <div class="full column">
 	<h1>Tomato productivity timer</h1>
-	<p>Timer based off of the popular productivity technique with the trademark name translating to "tomato" in Italian. I have this here for my personal usage, but you are more than welcome to use it. But this ain't all I've done! Check out my other projects displayed on Github.</p>
+	<p>Timer implementation of the popular productivity technique with the trademark name translating to "tomato" in Italian. I have this here for my personal usage, but you are more than welcome to use it. But this ain't all I've done! Check out my other projects displayed on Github.</p>
 	<a href="javascript:start25Minutes();" class="button min25">25 min productivity</a>
 	<a href="javascript:start5Minutes();" class="button min5">5 min break</a>
 	<a href="javascript:start10Minutes();" class="button min10">10 min break</a>
-	<p><br>Grant notifications when prompted if you want to be reminded when a timer stops. Or, <a href="javascript:notify('Notifications granted!')">click here to enable notifications</a>.</p>
+	<p><br>Each timers' interval is one minute to limit battery drainage compared to an interval of one second.<!--Grant notifications when prompted if you want to be reminded when a timer stops. Or, <a href="javascript:notify('Notifications granted!')">click here to enable notifications</a>.--></p>
       </div>
     </div>
   </div>
