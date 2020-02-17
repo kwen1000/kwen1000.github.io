@@ -184,7 +184,7 @@
       document.querySelector(".min5").innerText = "> 4 min";
       for (var i = 0; i < 5; i++) {
 	var remain = (4 - i)+" min";
-	setTimeout("_$('.min5').innerText = '"+remain+" min';", 60000 * (i + 1));
+	setTimeout("_$('.min5').innerText = '"+remain+"'; document.title = '"+remain+"'", 60000 * (i + 1));
       }
       setTimeout("_$('.min5').innerText = 'Start 5 min'; notify('Back to work!'); document.title = 'Back to work!'", 60000 * (5));
     }
@@ -195,7 +195,7 @@
       document.querySelector(".min10").innerText = "> 9 min";
       for (var i = 0; i < 10; i++) {
 	var remain = (9 - i)+" min";
-	setTimeout("_$('.min10').innerText = '"+remain+"';", 60000 * (i + 1));
+	setTimeout("_$('.min10').innerText = '"+remain+"'; document.title = '"+remain+"'", 60000 * (i + 1));
       }
       setTimeout("_$('.min10').innerText = 'Start 10 min'; notify('Back to work!'); document.title = 'Back to work!'", 60000 * (10));
     }
