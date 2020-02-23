@@ -23,7 +23,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!--<link rel="icon" type="image/png" href="images/favicon.png">-->
 	
   <style>
     @font-face {
@@ -41,15 +41,17 @@
       background-size: cover;
       background-repeat: repeat-x;
     }
-    .column {
+    .column, .columns {
       font-family: "Lexend Deca", Verdana;
       font-weight: 100;
-      margin: 10% 0;
       vertical-align: middle;
+      margin: 10% 0;
     }
-    .column p {
+    .column p, .columns p {
       font-family: Questrial, Arial;
       font-weight: 100;
+    }
+    .section {
     }
     h1 {
       font-size: 32px; 
@@ -94,6 +96,12 @@
     .terminal {
       display: block;
       width: 100%;
+    }
+    .transparent {
+      color: transparent;
+    }
+    .padLeft {
+      padding-left: 32px;
     }
     .codeText {
       background-color: #333333;
@@ -146,8 +154,12 @@
     }
     */
   </style>
-
   <script>
+    function Timer() { // this is how classes work in JS
+      this.endMessage = "";
+      this.endTime = new Date().getTime();
+    }
+
     function notify(message) {
       if (!("Notification" in window)) {
         // alert("Notifications not supported.");
@@ -165,6 +177,9 @@
 
     function _$(selector) {
       return document.querySelector(selector);
+    }
+
+    function tick(timer) {
     }
 
     function start25Minutes() {
@@ -222,6 +237,13 @@
         }) (commands[i], i);
       }
     }
+    
+    function onLoad() {
+      var timer = new Timer();
+      tick(timer);
+    }
+   
+    window.onload = onLoad;
   </script>
 
 </head>
@@ -236,8 +258,8 @@
       <div class="full column">
 	<p class="name">Kevin Wen</p>
         <h1>Computer Science and Linguistics student from UCLA graduating 2021.</h1>
-	<a class="button" href="https://github.com/kwen1000">Github</a>
-	<a class="button" href="https://linkedin.com/in/kejie-wen">LinkedIn</a>
+	<a class="button" href="https://github.com/kwen1000">GitHub</a>
+	<a class="button" href="https://linkedin.com/in/kwen1000">LinkedIn</a>
       </div>
    </div>
   </div>
@@ -259,13 +281,13 @@
     </div>
   </div>
 </div>
-<div class="section resume">
+<div class="section" name="resume">
   <div class="container">
     <div class="row">
       <div class="full column">
         <h1>Resume</h1>
         <p>For the contact prompt just select cancel or leave blank. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: <code>(###) ###-#### email@domain.edu</code>. If you cancel, leave it blank, or enter it wrong then you'll see "HASH INCORRECT" on the resume. You can ignore it or edit it out with the edit page prompt.<br><br>The rest of the prompts should be straightforward. Save the page as a PDF when done.</p>
-	<a class="button" href="Kevin_Wen_Resume_.html">Go to resume.</a>
+	<a class="button" href="Kevin_Wen_Resume_.html">Go to resume</a>
       </div>
     </div>
   </div>
@@ -285,13 +307,25 @@
 <div class="section tomato">
   <div class="container">
     <div class="row">
+      <div class="six columns">
+        <h1>Productivity timer</h1>
+	<p>Timer implementation of the Pomodoro technique. Start by thinking of a task that needs to be done. Then, work on that task for 25 minutes. After 25 minutes, take a break for 5 minutes. And repeat. I made this for myself, but you are more than welcome to use it.<br><br>Each timer's interval is one minute to limit battery drainage compared to an interval of one second. A notification will popup (if your browser supports notifications) when a timer is done.<!--Grant notifications when prompted if you want to be reminded when a timer stops. Or, <a href="javascript:notify('Notifications granted!')">click here to enable notifications</a>.--></p>
+      </div>
+      <div class="six columns padLeft">
+	<h1 class="timer transparent">Productivity timer</h1>
+	<a href="javascript:start25Minutes();" class="button min25">25 min productivity</a><br>
+	<a href="javascript:start5Minutes();" class="button min5">5 min break</a><br>
+	<a href="javascript:start10Minutes();" class="button min10">10 min break</a><br>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="row">
       <div class="full column">
-	<h1>Tomato productivity timer</h1>
-	<p>Timer implementation of the popular productivity technique with the trademark name translating to "tomato" in Italian. I have this here for my personal usage, but you are more than welcome to use it. But this ain't all I've done! Check out my other projects displayed on Github.</p>
-	<a href="javascript:start25Minutes();" class="button min25">25 min productivity</a>
-	<a href="javascript:start5Minutes();" class="button min5">5 min break</a>
-	<a href="javascript:start10Minutes();" class="button min10">10 min break</a>
-	<p><br>Each timers' interval is one minute to limit battery drainage compared to an interval of one second.<!--Grant notifications when prompted if you want to be reminded when a timer stops. Or, <a href="javascript:notify('Notifications granted!')">click here to enable notifications</a>.--></p>
+	<a class="button" href="https://github.com/kwen1000">GitHub</a>
+	<a class="button" href="https://linkedin.com/in/kwen1000">LinkedIn</a>
       </div>
     </div>
   </div>
