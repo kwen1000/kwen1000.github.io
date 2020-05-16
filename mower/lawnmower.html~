@@ -1,6 +1,8 @@
 <html>
 <head>
-<title></title>
+<style>
+audio {width: 100%}
+</script>
 </head>
 <body>
 You've discovered a secret!<br>
@@ -8,10 +10,14 @@ Your reward is the sound of lawn mowers.<br><br>
 <audio controls loop preload src="mower2min.mp3"></audio><br>
 <audio controls loop src="mower2min.mp3"></audio><br>
 <a href="mower2min.mp3">.</a>
-<input type="range"/>
+<input type="range" min="0" max="100" step="1" 
+  oninput="setVol(this.value)" onchange="setVol(this.value)"></input>
 <script>
-document.querySelector("input[type=range]").onchange = function() {
-  document.querySelectorAll("audio").forEach(x => x.volume = this.value/100)
+function setVol(val) {
+  var auds = document.querySelectorAll("audio");
+  for (var i = 0; i < auds.length; i++) {
+    auds[i].volume = val/100.
+  }
 }
 </script>
 </body>
