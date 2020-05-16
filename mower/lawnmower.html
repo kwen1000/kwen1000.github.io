@@ -10,7 +10,7 @@ Your reward is the sound of lawn mowers.<br><br>
 <a href="mower2min.mp3">.</a>
 <input type="range"/>
 <script>
-document.querySelector("input[type=range]").onchange = function() {
+document.querySelector("input[type=range]").oninput = function() {
   document.querySelectorAll("audio").forEach(x => x.volume = this.value/100)
 }
 </script>
