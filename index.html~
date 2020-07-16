@@ -139,6 +139,9 @@
         border-radius: 16px;
         height: 240px;
       }
+      .transparent { /* transparent mostly used for headers */
+        display: none;
+      }
     }
     /*
     .image:focus {
@@ -233,7 +236,7 @@
 	      char = "\n" + outputQueue.shift() + "\n<b>~ awesomesauce $</b>"
 	    }
 	    document.querySelector(".codeText").innerHTML += char;
-          }, i * 500)
+          }, i * 300)
         }) (commands[i], i);
       }
     }
@@ -285,8 +288,8 @@
   <div class="container">
     <div class="row">
       <div class="full column">
-        <h1>Resume</h1>
-        <p>For the contact prompt just select cancel or leave blank. This is a password prompt to reveal my contact info. The password is actually my contact info. This is verified using a hash function to reveal it. This is only done to prevent my contact info from being harvested by bots. If you want to reveal it, enter my contact info in the following format: <code>(###) ###-#### email@domain.edu</code>. If you cancel, leave it blank, or enter it wrong then you'll see "HASH INCORRECT" on the resume. You can ignore it or edit it out with the edit page prompt.<br><br>The rest of the prompts should be straightforward. Save the page as a PDF when done.</p>
+        <h1>About me</h1>
+        <p></p>
 	<a class="button" href="Kevin_Wen_Resume_.html">Go to resume</a>
       </div>
     </div>
@@ -297,9 +300,9 @@
     <div class="row">
       <div class="full column">
 	<h1>Some of my favorite Linux commands</h1>
-	<p></p>
+	<p>I do most of my work in command line interfaces (CLI). Of course, I know the basic commands, but I also know popular third party commands, such as npm and git.<br/><br/> And yes, I use dark theme 👍.</p>
 	<pre class="terminal"><code class="codeText"></code></pre>
-	<button onclick="awesomesauce(); this.onclick = null;">See them!</button>
+	<button onclick="awesomesauce(); this.onclick = null;">Open Terminal</button>
       </div>
     </div>
   </div>
@@ -311,7 +314,7 @@
         <h1>Productivity timer</h1>
 	<p>Timer implementation of the Pomodoro technique. Start by thinking of a task that needs to be done. Then, work on that task for 25 minutes. After 25 minutes, take a break for 5 minutes. And repeat. I made this for myself, but you are more than welcome to use it.<br><br>Each timer's interval is one minute to limit battery drainage compared to an interval of one second. A notification will popup (if your browser supports notifications) when a timer is done.<!--Grant notifications when prompted if you want to be reminded when a timer stops. Or, <a href="javascript:notify('Notifications granted!')">click here to enable notifications</a>.--></p>
       </div>
-      <div class="six columns padLeft">
+      <div class="six columns padLeft" style="text-align: center">
 	<h1 class="timer transparent">Productivity timer</h1>
 	<a href="javascript:start25Minutes();" class="button min25">25 min productivity</a><br>
 	<a href="javascript:start5Minutes();" class="button min5">5 min break</a><br>
