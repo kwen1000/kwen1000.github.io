@@ -1,64 +1,21 @@
 <html>
 <head>
-<style>
-@font-face {
-  font-family: "Questrial";
-  font-style: normal;
-  src:
-    local('Questrial'),
-    local('Questrial-Regular'),
-    url(fonts/questrial.tff) format('truetype');
-}
-@font-face {
-  font-family: "Lexend Deca";
-  font-style: normal;
-  src:
-    local('Lexend-Deca'),
-    local('Lexend-Deca-Regular'),
-    url(fonts/lexend.tff) format('truetype');
-}
-body {
-  font-family: Arial;
-  font-size: 10pt;
-  margin: 0.4in 1in;
-  font-weight: 200;
-  padding: 0;
-  line-height: 1.6
-}
-bigname {
-  font-family: Questrial, Arial;
-  font-size: 30pt
-}
-info {font-weight: bold}
-contact {
-  float: right;
-  font-size: 8pt;
-  line-height: 1.2;
-  width: 120px}
-img {width: 32px}
-border {
-  float: left;
-  margin-left: -56px;
-  margin-top: 16px
-}
-.bigMargin {
-  margin-left: 1.3in;
-  margin-right: 0.7in
-}
-</style>
+<link rel="stylesheet" href="css/index6.css" />
 </head>
 <body>
-<contact id="contact">kwen1000.github.io</contact>
+<b id="notice"></b><contact id="contact"></contact>
 <bigname>
 <span style="color:#7b6cff;">K</span><span style="color:#7c66f5;">e</span><span style="color:#7d61ea;">v</span><span style="color:#7e5be0;">i</span><span style="color:#7f55d5;">n</span><span style="color:#804fcb;"> </span><span style="color:#814ac0;">W</span><span style="color:#8244b6;">e</span><span style="color:#833eab;">n</span>
 </bigname>
 <br/>
-<picture image="images/i1.jpeg"></picture>
-<info>University of California, Los Angeles (UCLA)</info>. Graduating June 2021.<br/>
-Enrolled currently for a Bachelor's in Computer Science and Linguistics. <br/>
+<picture image="images/i1.jpg"></picture>
+<info>University of California Los Angeles (UCLA)</info>. Graduating June 2021.<br/>
+<ul>
+<li>Enrolled currently for a Bachelor's in Computer Science and Linguistics.</li>
 <!--Enrolled previously at Pasadena City CoIIege with a GPA of 3.68 / 4.00.<br/>-->
-Coding languages used include Python, JavaScript, C++, C, C#, Java, and OCaml.<br/>
-Skills include use of git, GitHub, BitBucket, npm, pip, Bash, and AWS Lambda.<br/>
+<li>Coding languages used include Python, JavaScript, C++, C, C#, Java, and OCaml.</li>
+<li>Experience in git, GitHub, BitBucket, NoSQL, npm, pip, Bash, and AWS Lambda.</li>
+</ul>
 <br/>
 <divider>
 <span style="color:#7b6cff;">E</span><span style="color:#7c67f6;">x</span><span style="color:#7d62ec;">p</span><span style="color:#7e5de3;">e</span><span style="color:#7f58da;">r</span><span style="color:#7f52d0;">i</span><span style="color:#804dc7;">e</span><span style="color:#8148be;">n</span><span style="color:#8243b4;">c</span><span style="color:#833eab;">e</span>
@@ -67,34 +24,43 @@ Skills include use of git, GitHub, BitBucket, npm, pip, Bash, and AWS Lambda.<br
 <experience>
   <picture image="images/thyflow.png"></picture>
   <info>ThyFlow. Software Engineer Intern.</info> June 2020 - September 2020. Remote.<br/>
-  Established NodeJS API integrating Yelp's API as candidate backend infrastructure.<br/>
-  Implemented both a ReactJS and a NextJS frontend deployed with Netlify for CI/CD.<br/>
-  Wrote unit testing and other test suites with continuous integration from Travis CI.<br/>
+  <ul>
+  <li>Contributed PRs to a Docker containerized NodeJS and ExpressJS MVC REST API.</li>
+  <li>Implemented both a ReactJS and a NextJS frontend deployed with Netlify for CI/CD.</li>
+  <li>Connected API with MongoDB NoSQL and backend authentication with PassportJS.</li>
+  <li>Unit tested API using Mocha and Chai with continuous integration from Travis CI.</li>
+  </ul>
   <br/>
 </experience>
 <experience>
   <picture image="images/i2.png"></picture>
   <info>Noshware. Software Engineer Intern.</info> June 2019 - September 2019. Glendale.<br/>
-  Spearheaded Python Django REST API endpoint and migration of data to SQLite.<br/>
-  Deployed with Amazon/AWS Elastic Beanstalk for candidate multi-platform API.<br/>
-  Drafted React dashboard helping clients visualize their data to better retention.<br/>
+  <ul>
+  <li>Spearheaded Python Django REST API endpoint and migration of data to SQLite.</li>
+  <li>Deployed with Amazon/AWS Elastic Beanstalk for candidate multi-platform API.</li>
+  <li>Drafted React dashboard helping clients visualize their data helping with retention.</li>
+  </ul>
   <br/>
 </experience>
 <experience>
-<picture image="images/i3.jpg"></picture>
+  <picture image="images/i3.jpg"></picture>
   <info>SuperWorld. Developer Intern.</info> June 2018 - September 2018. Los Angeles.<br/>
-  Transformed Unity C# codebase to finite states kickstarting content creation network.<br/>
-  Implemented Mapbox JavaScript mapping features easing backlog of lead developer.<br/>
-  Bootstrapped CSS with UI designer for MVP website for better fundraiser onboarding.<br/>
+  <ul>
+  <li>Transformed Unity C# codebase to finite states kickstarting content creation network.</li>
+  <li>Implemented Mapbox JavaScript mapping features easing backlog of lead developer.</li>
+  <li>Bootstrapped CSS with UI designer for MVP website for better fundraiser onboarding.</li>
+  </ul>
   <br/>
 </experience>
 <!--
-<experience>
+<experience class="hidden">
   <picture image="images/i4.png"></picture>
   <info>Rain Brigade. Contract Unity Developer.</info> March 2018 - June 2018. Los Angeles.<br/>
-  Refactored old C# code to use Unity events API for 20% faster ticks per second.<br/>
-  Restructured singleton design patterns to shrink variable sizes by three-fourths.<br/>
-  Compiled and tested app to retain 10% more budget Androids and extra revenue.<br/>
+  <ul>
+  <li>Refactored old C# code to use Unity events API for 20% faster ticks per second.</li>
+  <li>Restructured singleton design patterns to shrink variable sizes by three-fourths.</li>
+  <li>Compiled and tested app to retain 10% more budget Androids and extra revenue.</li>
+  </ul>
   <br/>
 </experience>
 -->
@@ -103,76 +69,47 @@ Skills include use of git, GitHub, BitBucket, npm, pip, Bash, and AWS Lambda.<br
 </divider>
 <br/>
 <!--
-Security Camera fullstack project. September 2019.<br/>
-Designed Django Python backend to accept image upload from JavaScript frontend.<br/>
-<br/>
+<experience class="hidden">
+  Security camera fullstack project<br/>
+  Designed Django Python backend to accept image upload from JavaScript frontend.<br/>
+  <br/>
+</experience>
 -->
 <experience>
   <picture image="images/i5.png"></picture>
-  QuickShort<br/>
-  URL shortener project built with NodeJS and managed with npm on Linux shells.<br/>
-  Integrated ExpressJS and MongoDB NoSQL while outputting JSON data as endpoint.<br/>
+  QuickShort URL shortener project<br/>
+  <ul>
+  <li>Model-view-controller "MVC" REST API project built with Node.js and Express.js.</li>
+  <li>Connected Mongo/Mongoose DBMS and Handlebars with Bootstrap CSS for frontend.</li>
+  </ul>
   <br/>
 </experience>
 <experience>
   <picture image="images/i6.png"></picture>
-  JavNote<br/>
-  Windowed notepad application built with Java with UI elements from Swing.<br/>
-  Furnished Bash shell script for easy compilation and diagnosing compile errors.<br/>
+  JavNote project<br/>
+  <ul>
+  <li>Text editor for Windows, Mac, and other OS with Java support for Swing UI library.</li>
+  <li>Furnished Bash shell script for easy compilation and diagnosing compile errors.</li>
+  </ul>
   <br/>
 </experience>
 <experience>
   <picture image="images/i7.png"></picture>
-  Geneomics<br/>
-  Single-Nucleotide Polymorphism (SNiP) DNA Finder project in Xcode C++.<br/>
-  Employed STL efficiently to work with millions of genetic data and large files.<br/>
+  Geneomics project<br/>
+  <ul>
+  <li>Single-Nucleotide Polymorphism "SNiP" DNA finder project in Xcode C++.</li>
+  <li>Employed STL efficiently to work with millions of genetic data and large files.</li>
+  </ul>
   <br/>
 </experience>
 <experience>
   <picture image="images/i8.png"></picture>
-  eGo Maps<br/>
-  Google Maps webapp client built with JavaScript and HTML with styling from CSS.<br/>
-  Optimized usage HTML5 Canvas and the JavaScript DOM limiting dragging latency.<br/>
+  eGo Maps project<br/>
+  <ul>
+  <li>Google Maps webapp client built with JavaScript and HTML with styling from CSS3.</li>
+  <li>Optimized usage of HTML5 Canvas and the JavaScript DOM limiting dragging latency.</li>
+  </ul>
 </experience>
 </body>
-<script>
-document.querySelectorAll("experience").forEach(
-  item => item.ondblclick = function() {
-    if (confirm("Delete this block?")) {
-      this.style.display = "none";
-    }
-  }
-);
-
-String.prototype.hashCode = function() {
-  var hash = 0, i, chr;
-  if (this.length === 0) return hash;
-  for (i = 0; i < this.length; i++) {
-    chr = this.charCodeAt(i);
-    hash = ((hash << 5) - hash) + chr;
-    hash |= 0; // Convert to 32bit integer
-  }
-  return hash;
-};
-
-// alert(prompt("To hash: ").hashCode());
-
-var promptText = "Enter contact password. \n(Answer: \"(###) ###-#### ????@go.????????.edu\") \n(Cancel if you do not know.)"
-contactHash = "418845698"; // phone number and email address
-var entry = prompt(promptText) || "123";
-
-document.querySelector("#contact").innerHTML = (entry.hashCode() == contactHash ? entry : "CONTACT HASH INCORRECT.<br/> CONTACT HASH INCORRECT.<br/> CONTACT HASH INCORRECT.<br/> CONTACT HASH INCORRECT.<br/>")+" kwen1000.github.io";
-
-if (window.confirm("Allow editable (has spell checking)?")) {
-  document.body.setAttribute("contenteditable", "true");
-}
-
-if (window.confirm("Show pictures?")) {
-  var pictures = document.querySelectorAll("picture");
-  for (var i = 0; i < pictures.length; i++) {
-    pictures[i].innerHTML = "<border><img src="+pictures[i].getAttribute("image")+" onclick='var link = prompt(\"Replace image with url: \"); if (link){this.src = link}'></border>";
-  }
-  document.body.className = "bigMargin";
-}
-</script>
+<script src="js/index6.js"></script>
 </html>
