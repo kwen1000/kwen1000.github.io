@@ -20,11 +20,11 @@ String.prototype.hashCode = function() {
 // alert(prompt("To hash: ").hashCode());
 
 var promptText = "Enter contact password. \n(Answer: \"(###) ###-#### ????????@outlook.com\") \n(Cancel if you do not know.)"
-contactHash = "-908326944"; // phone number and email address
+contactHash = "-1897066830"; // phone number and email address
 var entry = prompt(promptText) || "123";
 
 if (entry.hashCode() == contactHash) {
-  document.querySelector("#contact").innerHTML = entry + "<br/>kwen1000.github.io";
+  document.querySelector("#contact").innerHTML = entry + "<br/>linkedin.com/in/kwen1000<!--kwen1000.github.io-->";
 }
 else {
   document.querySelector("#notice").innerHTML = "CONTACT HASH INCORRECT. CONTACT HASH INCORRECT. <br/>"
