@@ -19,7 +19,7 @@ String.prototype.hashCode = function() {
 
 // alert(prompt("To hash: ").hashCode());
 
-var promptText = "Enter contact password. \n(Answer: \"(###) ###-#### ????????@outlook.com\") \n(Cancel if you do not know.)"
+var promptText = "Enter contact password. \n(Answer: \"(###) ###-#### ???@????.com\") \n(Cancel if you do not know.)"
 contactHash = "-1897066830"; // phone number and email address
 var entry = prompt(promptText) || "123";
 
