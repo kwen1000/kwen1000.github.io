@@ -5,15 +5,8 @@
     local('Questrial'),
     local('Questrial-Regular'),
     url(../fonts/questrial.tff) format('truetype');
-  }
-@font-face {
-  font-family: "Lexend Deca";
-  font-style: normal;
-  src:
-    local('Lexend-Deca'),
-    local('Lexend-Deca-Regular'),
-    url(../fonts/lexend.tff) format('truetype');
 }
+
 body {
   font-family: Arial;
   font-size: 10pt;
@@ -22,22 +15,33 @@ body {
   padding: 0;
   line-height: 1.6
 }
+
 bigname {
   font-family: Questrial, Arial;
   font-size: 30pt
 }
-info {font-weight: bold}
+
+info {
+  font-weight: bold
+}
+
 contact {
   float: right;
   font-size: 8pt;
   line-height: 1.2;
-  width: 120px}
-img {width: 32px}
+  width: 120px
+}
+
+img {
+  width: 32px
+}
+
 border {
   float: left;
   margin-left: -56px;
   margin-top: 16px
 }
+
 ul {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -48,9 +52,11 @@ ul {
   max-width: 530px;
   */
 }
+
 .hidden {
   display: none;
 }
+
 .bigMargin {
   margin-left: 1.3in;
   margin-right: 0.7in
