@@ -9,6 +9,9 @@ You've discovered a secret!<br>
 Your reward is the sound of lawn mowers.<br><br>
 <audio controls loop volume="100" preload src="mower2min.mp3"></audio><br>
 <audio controls loop volume="100" src="mower2min.mp3"></audio><br>
+<audio controls loop volume="100" preload src="crew2derby.mp3"></audio><br>
+<audio controls loop volume="100" src="crew2derby.mp3"></audio><br>
+<audio controls loop volume="100" src="crew2derby.mp3"></audio><br>
 <a href="mower2min.mp3">.</a>
 <input type="range" min="0" max="100" step="1" 
   oninput="setVol(this.value)" onchange="setVol(this.value)"></input>
